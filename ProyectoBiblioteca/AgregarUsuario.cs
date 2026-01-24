@@ -16,8 +16,8 @@ namespace ProyectoBiblioteca
     public partial class AgregarUsuario : Form
     {
 
-       
-        public controlador ControladorAgregarU{ get; set; }
+
+        public controlador ControladorAgregarU { get; set; }
 
         public AgregarUsuario()
         {
@@ -29,17 +29,20 @@ namespace ProyectoBiblioteca
         {
             txbNombre.Text = "";
             txbApellido.Text = "";
-            txbEmail.Text = "";
+            txbApellido2.Text = "";
+
+            txbTelefono.Text = "";
             txbBuscarUsuario.Text = "";
-           
+
 
         }
 
         private void btGuardar_Click(object sender, EventArgs e)
+
         {
             try
             {
-                ControladorAgregarU.InsertarUsuario(txbNombre.Text, txbApellido.Text, txbEmail.Text);
+                ControladorAgregarU.InsertarUsuario(txbNombre.Text, txbApellido.Text, txbApellido2.Text, (int.Parse)(txbTelefono.Text));
                 MessageBox.Show("has insertado correctamente un usuarui nuevo ");
                 limpiar();
             }
@@ -53,10 +56,10 @@ namespace ProyectoBiblioteca
         {
             try
             {
-                string texto = txbBuscarUsuario.Text;       
-                var filtrado =ControladorAgregarU.FiltrarUsuarios(texto);
+                string texto = txbBuscarUsuario.Text;
+                var filtrado = ControladorAgregarU.MostrarUsuarios();
 
-                foreach(Usuario usarioFiltrado in filtrado)
+                foreach (Usuario usarioFiltrado in filtrado)
                 {
                     MessageBox.Show(usarioFiltrado.ToString());
                 }
@@ -70,10 +73,10 @@ namespace ProyectoBiblioteca
         private void btCerrar_Click(object sender, EventArgs e)
         {
             this.Close();
-           
-          
+
+
         }
 
-    
+
     }
 }

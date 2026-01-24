@@ -52,11 +52,13 @@
             this.label2 = new System.Windows.Forms.Label();
             this.txbNombre = new System.Windows.Forms.TextBox();
             this.tableLayoutPanel5 = new System.Windows.Forms.TableLayoutPanel();
-            this.label4 = new System.Windows.Forms.Label();
-            this.txbEmail = new System.Windows.Forms.TextBox();
+            this.lblNumeroTelefono = new System.Windows.Forms.Label();
+            this.txbTelefono = new System.Windows.Forms.TextBox();
             this.tableLayoutPanel6 = new System.Windows.Forms.TableLayoutPanel();
             this.btGuardar = new System.Windows.Forms.Button();
             this.btCerrar = new System.Windows.Forms.Button();
+            this.label5 = new System.Windows.Forms.Label();
+            this.txbApellido2 = new System.Windows.Forms.TextBox();
             this.msPrincipal.SuspendLayout();
             this.tableLayoutPanel1.SuspendLayout();
             this.tableLayoutPanel2.SuspendLayout();
@@ -291,9 +293,12 @@
             // 
             this.tableLayoutPanel4.BackColor = System.Drawing.SystemColors.AppWorkspace;
             this.tableLayoutPanel4.CellBorderStyle = System.Windows.Forms.TableLayoutPanelCellBorderStyle.Inset;
-            this.tableLayoutPanel4.ColumnCount = 2;
-            this.tableLayoutPanel4.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel4.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tableLayoutPanel4.ColumnCount = 3;
+            this.tableLayoutPanel4.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
+            this.tableLayoutPanel4.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
+            this.tableLayoutPanel4.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
+            this.tableLayoutPanel4.Controls.Add(this.txbApellido2, 2, 1);
+            this.tableLayoutPanel4.Controls.Add(this.label5, 2, 0);
             this.tableLayoutPanel4.Controls.Add(this.txbApellido, 1, 1);
             this.tableLayoutPanel4.Controls.Add(this.label3, 1, 0);
             this.tableLayoutPanel4.Controls.Add(this.label2, 0, 0);
@@ -313,18 +318,19 @@
             this.txbApellido.BackColor = System.Drawing.SystemColors.AppWorkspace;
             this.txbApellido.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txbApellido.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.txbApellido.Location = new System.Drawing.Point(398, 29);
+            this.txbApellido.Location = new System.Drawing.Point(265, 29);
             this.txbApellido.Margin = new System.Windows.Forms.Padding(0);
             this.txbApellido.Name = "txbApellido";
-            this.txbApellido.Size = new System.Drawing.Size(394, 15);
+            this.txbApellido.Size = new System.Drawing.Size(261, 15);
             this.txbApellido.TabIndex = 3;
             // 
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(401, 2);
+            this.label3.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.label3.Location = new System.Drawing.Point(268, 2);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(63, 16);
+            this.label3.Size = new System.Drawing.Size(255, 25);
             this.label3.TabIndex = 1;
             this.label3.Text = "Apellido :";
             // 
@@ -336,7 +342,7 @@
             this.label2.ForeColor = System.Drawing.SystemColors.ButtonFace;
             this.label2.Location = new System.Drawing.Point(5, 2);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(388, 25);
+            this.label2.Size = new System.Drawing.Size(255, 25);
             this.label2.TabIndex = 0;
             this.label2.Text = "Nombre :";
             // 
@@ -348,15 +354,15 @@
             this.txbNombre.Location = new System.Drawing.Point(2, 29);
             this.txbNombre.Margin = new System.Windows.Forms.Padding(0);
             this.txbNombre.Name = "txbNombre";
-            this.txbNombre.Size = new System.Drawing.Size(394, 15);
+            this.txbNombre.Size = new System.Drawing.Size(261, 15);
             this.txbNombre.TabIndex = 2;
             // 
             // tableLayoutPanel5
             // 
             this.tableLayoutPanel5.ColumnCount = 1;
             this.tableLayoutPanel5.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel5.Controls.Add(this.label4, 0, 0);
-            this.tableLayoutPanel5.Controls.Add(this.txbEmail, 0, 1);
+            this.tableLayoutPanel5.Controls.Add(this.lblNumeroTelefono, 0, 0);
+            this.tableLayoutPanel5.Controls.Add(this.txbTelefono, 0, 1);
             this.tableLayoutPanel5.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tableLayoutPanel5.Location = new System.Drawing.Point(3, 192);
             this.tableLayoutPanel5.Name = "tableLayoutPanel5";
@@ -366,26 +372,26 @@
             this.tableLayoutPanel5.Size = new System.Drawing.Size(794, 56);
             this.tableLayoutPanel5.TabIndex = 3;
             // 
-            // label4
+            // lblNumeroTelefono
             // 
-            this.label4.AutoSize = true;
-            this.label4.BackColor = System.Drawing.SystemColors.AppWorkspace;
-            this.label4.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label4.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label4.Location = new System.Drawing.Point(3, 0);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(788, 28);
-            this.label4.TabIndex = 0;
-            this.label4.Text = "Correo Electronico";
+            this.lblNumeroTelefono.AutoSize = true;
+            this.lblNumeroTelefono.BackColor = System.Drawing.SystemColors.AppWorkspace;
+            this.lblNumeroTelefono.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.lblNumeroTelefono.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.lblNumeroTelefono.Location = new System.Drawing.Point(3, 0);
+            this.lblNumeroTelefono.Name = "lblNumeroTelefono";
+            this.lblNumeroTelefono.Size = new System.Drawing.Size(788, 28);
+            this.lblNumeroTelefono.TabIndex = 0;
+            this.lblNumeroTelefono.Text = "Numero de Telefono";
             // 
-            // txbEmail
+            // txbTelefono
             // 
-            this.txbEmail.BackColor = System.Drawing.SystemColors.AppWorkspace;
-            this.txbEmail.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.txbEmail.Location = new System.Drawing.Point(3, 31);
-            this.txbEmail.Name = "txbEmail";
-            this.txbEmail.Size = new System.Drawing.Size(788, 22);
-            this.txbEmail.TabIndex = 1;
+            this.txbTelefono.BackColor = System.Drawing.SystemColors.AppWorkspace;
+            this.txbTelefono.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.txbTelefono.Location = new System.Drawing.Point(3, 31);
+            this.txbTelefono.Name = "txbTelefono";
+            this.txbTelefono.Size = new System.Drawing.Size(788, 22);
+            this.txbTelefono.TabIndex = 1;
             // 
             // tableLayoutPanel6
             // 
@@ -429,6 +435,27 @@
             this.btCerrar.Text = "Cancelar";
             this.btCerrar.UseVisualStyleBackColor = false;
             this.btCerrar.Click += new System.EventHandler(this.btCerrar_Click);
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.label5.Location = new System.Drawing.Point(531, 2);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(258, 25);
+            this.label5.TabIndex = 4;
+            this.label5.Text = "Apellido2 :";
+            // 
+            // txbApellido2
+            // 
+            this.txbApellido2.BackColor = System.Drawing.SystemColors.AppWorkspace;
+            this.txbApellido2.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txbApellido2.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.txbApellido2.Location = new System.Drawing.Point(528, 29);
+            this.txbApellido2.Margin = new System.Windows.Forms.Padding(0);
+            this.txbApellido2.Name = "txbApellido2";
+            this.txbApellido2.Size = new System.Drawing.Size(264, 15);
+            this.txbApellido2.TabIndex = 5;
             // 
             // AgregarUsuario
             // 
@@ -481,10 +508,12 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.TextBox txbNombre;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel5;
-        private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.TextBox txbEmail;
+        private System.Windows.Forms.Label lblNumeroTelefono;
+        private System.Windows.Forms.TextBox txbTelefono;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel6;
         private System.Windows.Forms.Button btGuardar;
         private System.Windows.Forms.Button btCerrar;
+        private System.Windows.Forms.TextBox txbApellido2;
+        private System.Windows.Forms.Label label5;
     }
 }

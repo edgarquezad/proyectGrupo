@@ -10,3 +10,17 @@ C:\Users\Edgar Q\source\repos\ProyectoBiblioteca\ProyectoBiblioteca\obj\Debug\Pr
 C:\Users\Edgar Q\source\repos\ProyectoBiblioteca\ProyectoBiblioteca\obj\Debug\ProyectoBiblioteca.exe.config
 C:\Users\Edgar Q\source\repos\ProyectoBiblioteca\ProyectoBiblioteca\obj\Debug\ProyectoBiblioteca.AgregarUsuario.resources
 C:\Users\Edgar Q\source\repos\ProyectoBiblioteca\ProyectoBiblioteca\obj\Debug\ProyectoBiblioteca.formularioPrincipal.resources
+C:\Users\Edgar Q\Desktop\ProyectoGrupo\proyectGrupo\ProyectoBiblioteca\obj\Debug\ProyectoBiblioteca.csproj.AssemblyReference.cache
+C:\Users\Edgar Q\Desktop\ProyectoGrupo\proyectGrupo\ProyectoBiblioteca\obj\Debug\ProyectoBiblioteca.exe.config
+C:\Users\Edgar Q\Desktop\ProyectoGrupo\proyectGrupo\ProyectoBiblioteca\obj\Debug\ProyectoBiblioteca.AgregarUsuario.resources
+C:\Users\Edgar Q\Desktop\ProyectoGrupo\proyectGrupo\ProyectoBiblioteca\obj\Debug\ProyectoBiblioteca.formularioPrincipal.resources
+C:\Users\Edgar Q\Desktop\ProyectoGrupo\proyectGrupo\ProyectoBiblioteca\obj\Debug\ProyectoBiblioteca.Properties.Resources.resources
+C:\Users\Edgar Q\Desktop\ProyectoGrupo\proyectGrupo\ProyectoBiblioteca\obj\Debug\ProyectoBiblioteca.csproj.GenerateResource.cache
+C:\Users\Edgar Q\Desktop\ProyectoGrupo\proyectGrupo\ProyectoBiblioteca\obj\Debug\ProyectoBiblioteca.csproj.CoreCompileInputs.cache
+C:\Users\Edgar Q\Desktop\ProyectoGrupo\proyectGrupo\ProyectoBiblioteca\obj\Debug\ProyectoBiblioteca.exe
+C:\Users\Edgar Q\Desktop\ProyectoGrupo\proyectGrupo\ProyectoBiblioteca\obj\Debug\ProyectoBiblioteca.pdb
+C:\Users\Edgar Q\Desktop\ProyectoGrupo\proyectGrupo\ProyectoBiblioteca\bin\Debug\ProyectoBiblioteca.exe.config
+C:\Users\Edgar Q\Desktop\ProyectoGrupo\proyectGrupo\ProyectoBiblioteca\bin\Debug\ProyectoBiblioteca.exe
+C:\Users\Edgar Q\Desktop\ProyectoGrupo\proyectGrupo\ProyectoBiblioteca\bin\Debug\ProyectoBiblioteca.pdb
+C:\Users\Edgar Q\Desktop\ProyectoGrupo\proyectGrupo\ProyectoBiblioteca\bin\Debug\System.Data.SQLite.dll
+C:\Users\Edgar Q\Desktop\ProyectoGrupo\proyectGrupo\ProyectoBiblioteca\obj\Debug\Proyecto.02D7E3BE.Up2Date

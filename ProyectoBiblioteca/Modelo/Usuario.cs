@@ -8,29 +8,24 @@ namespace ProyectoBiblioteca.Modelo
 {
     public class Usuario
     {
-        public string Nombre { get; set; }
-        public string Apellido { get; set; }
-        public string Email {  get; set; }
         public int Id { get; set; }
+        public string Nombre { get; set; }
+        public string Apellido1 { get; set; }
+        public string Apellido2 { get; set; }
+        public int Telefono { get; set; }
 
-
-
-
-        public Usuario(string nombre, string apellido1,string email, int id)
+        public Usuario(int id, string nombre, string apellido1, string apellido2, int telefono)
         {
-            Nombre = nombre;
-            Apellido = apellido1;
-            Email = email;
             Id = id;
-
-
+            Nombre = nombre;
+            Apellido1 = apellido1;
+            Apellido2 = apellido2;
+            Telefono = telefono;
         }
-
-
 
         public override string ToString()
         {
-            return $"Id: {Id} | Nombre:{Nombre} |Apellido :{Apellido} |Email : {Email}";
+            return $"Id: {Id} | Nombre:{Nombre} |Apellido1 :{Apellido1}|Apellido2: {Apellido2} |telefono:{Telefono}";
 
         }
 
