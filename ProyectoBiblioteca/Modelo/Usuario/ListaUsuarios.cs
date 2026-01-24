@@ -29,26 +29,49 @@ namespace ProyectoBiblioteca.Modelo
         {
             List<Usuario> resultado = new List<Usuario>();
 
-            foreach (Usuario usuarioBuscar in Usuarios)
+            using (SQLiteConnection cnn = Conexion.Conectar(ruta))
             {
+
+                string sql;
+                SQLiteCommand cmd = new SQLiteCommand();
+                cmd.Connection = cnn;
+                
+
                 if (id > 0)
-                {
-                    if (usuarioBuscar.Id == id)
-                    {
-                        resultado.Add(usuarioBuscar);
-                    }
-                    else if ((usuarioBuscar.Nombre == texto)
-                            || (usuarioBuscar.Apellido1 == texto)
-                     )
+    {
+        sql = @"SELECT ID, Nombre, Apellido_1, Apellido_2, Telefono 
+    FROM Usuarios 
+    WHERE ID = @id";
 
-                    {
-                        resultado.Add(usuarioBuscar);
-                    }
+        cmd.Parameters.AddWithValue("@id", id);
+    }
+    else
+    {
+        sql = @"SELECT ID, Nombre, Apellido_1, Apellido_2, Telefono 
+    FROM Usuarios 
+    WHERE Nombre LIKE @texto 
+       OR Apellido_1 LIKE @texto 
+       OR Apellido_2 LIKE @texto";
 
+        cmd.Parameters.AddWithValue("@texto", "%" + texto + "%");
+    }
 
-                }
-            }
+    cmd.CommandText = sql;
 
+    using (SQLiteDataReader dr = cmd.ExecuteReader())
+    {
+        while (dr.Read())
+        {
+            resultado.Add(new Usuario(
+                dr.GetInt32(0),
+                dr.GetString(1),
+                dr.GetString(2),
+                dr.GetString(3),
+                dr.GetInt32(4)
+            ));
+        }
+    }
+}
             return resultado;
         }
 
