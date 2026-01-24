@@ -57,11 +57,11 @@ namespace ProyectoBiblioteca
             try
             {
                 string texto = txbBuscarUsuario.Text;
-                var filtrado = ControladorAgregarU.MostrarUsuarios();
+                var filtrado = ControladorAgregarU.FiltrarUsuarios(texto);
 
-                foreach (Usuario usarioFiltrado in filtrado)
+                foreach (string usuario in filtrado)
                 {
-                    MessageBox.Show(usarioFiltrado.ToString());
+                    MessageBox.Show(usuario);
                 }
             }
             catch (Exception ex)
