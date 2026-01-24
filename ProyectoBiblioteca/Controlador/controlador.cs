@@ -58,7 +58,7 @@ namespace ProyectoBiblioteca.Controlador
             bool esId = int.TryParse(texto, out id);
             List<Usuario> usuarios;
 
-            if (esID)
+            if (esId)
                 usuarios = lista.filtrarUsuarios("", id);
             else 
                 usuarios = lista.filtrarUsuarios(texto,0);
@@ -66,14 +66,14 @@ namespace ProyectoBiblioteca.Controlador
             if (usuarios.Count == 0)
                 throw new Exception("No se encontraron usuarios con esos criterios");
 
-            List<string> resultado = new Lis<string>();
+            List<string> resultado = new List<string>();
 
-            foreach (Usuario usu in usuarios)
+            foreach (Usuario u in usuarios)
             {
-                resultado.Add{u.Id} - {u.Nombre} {u.Apellido1} {u.Apellido2} ({u.Telefono})");
+                resultado.Add($"{u.Id} - {u.Nombre} {u.Apellido1} {u.Apellido2} ({u.Telefono})");
             }
 
-            return usuarios;
+            return resultado;
 
         }
         public List<Usuario> MostrarUsuarios(){
