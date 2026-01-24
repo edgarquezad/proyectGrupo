@@ -54,9 +54,15 @@ namespace ProyectoBiblioteca.Controlador
         public List<Usuario> FiltrarUsuarios(string texto)
 
         {
-            int id = 0;
-            int.TryParse(texto, out id);
-            List<Usuario> usuarios = lista.filtrarUsuarios(texto, id);
+            int id;
+            bool esId = int.TryParse(texto, out id);
+            List<Usuario> usuarios;
+
+            if (esID)
+                usuarios = lista.filtrarUsuarios("", id);
+            else 
+                usuarios = lista.filtrarUsuarios(texto,0);
+            
             if (usuarios.Count == 0)
                 throw new Exception("No se encontraron usuarios con esos criterios");
             else
