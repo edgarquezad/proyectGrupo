@@ -51,7 +51,7 @@ namespace ProyectoBiblioteca.Controlador
 
 
         }
-        public List<Usuario> FiltrarUsuarios(string texto)
+        public List<string> FiltrarUsuarios(string texto)
 
         {
             int id;
@@ -65,11 +65,15 @@ namespace ProyectoBiblioteca.Controlador
             
             if (usuarios.Count == 0)
                 throw new Exception("No se encontraron usuarios con esos criterios");
-            else
 
-                
+            List<string> resultado = new Lis<string>();
 
-                return usuarios;
+            foreach (Usuario usu in usuarios)
+            {
+                resultado.Add{u.Id} - {u.Nombre} {u.Apellido1} {u.Apellido2} ({u.Telefono})");
+            }
+
+            return usuarios;
 
         }
         public List<Usuario> MostrarUsuarios(){
