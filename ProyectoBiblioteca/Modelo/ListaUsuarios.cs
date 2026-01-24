@@ -16,7 +16,7 @@ namespace ProyectoBiblioteca.Modelo
         private List<Usuario> Usuarios = new List<Usuario>();
         private int siguienteId = 1;
         private string ruta =
-@"C:\Users\Edgar Q\source\repos\ProyectoBiblioteca\ProyectoBiblioteca\Biblioteca.db;Version=3;";
+@"Data Source =C:\Users\Edgar Q\Desktop\ProyectoGrupo\proyectGrupo\ProyectoBiblioteca\Biblioteca.db;version=3";
 
 
         public void Agregar(string nombre, string Apellido1, string Apellido2, int telefono)

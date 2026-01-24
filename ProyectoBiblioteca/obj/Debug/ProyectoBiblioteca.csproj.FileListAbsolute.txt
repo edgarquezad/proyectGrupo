@@ -24,3 +24,5 @@ C:\Users\Edgar Q\Desktop\ProyectoGrupo\proyectGrupo\ProyectoBiblioteca\bin\Debug
 C:\Users\Edgar Q\Desktop\ProyectoGrupo\proyectGrupo\ProyectoBiblioteca\bin\Debug\ProyectoBiblioteca.pdb
 C:\Users\Edgar Q\Desktop\ProyectoGrupo\proyectGrupo\ProyectoBiblioteca\bin\Debug\System.Data.SQLite.dll
 C:\Users\Edgar Q\Desktop\ProyectoGrupo\proyectGrupo\ProyectoBiblioteca\obj\Debug\Proyecto.02D7E3BE.Up2Date
+C:\Users\Edgar Q\Desktop\ProyectoGrupo\proyectGrupo\ProyectoBiblioteca\bin\Debug\Biblioteca.db
+C:\Users\Edgar Q\Desktop\ProyectoGrupo\proyectGrupo\ProyectoBiblioteca\bin\Debug\System.Data.SQLite.xml
