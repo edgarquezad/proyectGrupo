@@ -11,7 +11,13 @@ namespace ProyectoBiblioteca.Controlador
 {
     public class controlador
     {
+
+        /// <summary>
+        ///USUARIO  controlador de insertar usuaruio y filtrar usuario , "faltaria eliminar usuario, intentar completarlo "
+        /// </summary>
         private Empleados lista = new Empleados();
+
+ 
         public void InsertarUsuario(string nombre, string Apellido1, string Apellido2, int telefono)
         {
 
@@ -55,11 +61,12 @@ namespace ProyectoBiblioteca.Controlador
                 throw new Exception("No se encontraron usuarios con esos criterios");
             else
 
+                
+
                 return usuarios;
 
         }
-        public List<Usuario> MostrarUsuarios()
-        {
+        public List<Usuario> MostrarUsuarios(){
             List<Usuario> usuarios = lista.obtenerUsuarios();
             if (usuarios.Count == 0)
                 throw new Exception("La lista de usuarios está vacía");
@@ -68,6 +75,10 @@ namespace ProyectoBiblioteca.Controlador
                 return usuarios;
 
         }
+
+        // Controlador de Libros 
+
+    
 
 
     }

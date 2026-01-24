@@ -4,8 +4,8 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace ProyectoBiblioteca.Modelo
-{
+namespace ProyectoBiblioteca.Modelo { 
+
     public class Usuario
     {
         public int Id { get; set; }

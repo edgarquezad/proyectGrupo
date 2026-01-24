@@ -67,8 +67,10 @@
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
     <Compile Include="Modelo\Conexion.cs" />
-    <Compile Include="Modelo\ListaUsuarios.cs" />
-    <Compile Include="Modelo\Usuario.cs" />
+    <Compile Include="Modelo\Libro\Libro.cs" />
+    <Compile Include="Modelo\Libro\ListaLibros.cs" />
+    <Compile Include="Modelo\Usuario\ListaUsuarios.cs" />
+    <Compile Include="Modelo\Usuario\Usuario.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="AgregarUsuario.resx">
