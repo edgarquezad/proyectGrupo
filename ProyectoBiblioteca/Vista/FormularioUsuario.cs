@@ -15,8 +15,6 @@ namespace ProyectoBiblioteca
 {
     public partial class FormularioUsuario : Form
     {
-
-
         public controlador UsuarioU{ get; set; }
 
         public FormularioUsuario()
@@ -30,12 +28,9 @@ namespace ProyectoBiblioteca
             txbNombre.Text = "";
             txbApellido.Text = "";
             txbApellido2.Text = "";
-
             txbTelefono.Text = "";
             txbBuscarUsuario.Text = "";
-
-
-        }
+       }
 
         private void btGuardar_Click(object sender, EventArgs e)
 
@@ -72,9 +67,7 @@ namespace ProyectoBiblioteca
 
         private void btCerrar_Click(object sender, EventArgs e)
         {
-            this.Close();//Cerramos el formulario y al ser secundario se mostrara el principal ( formularioInicio)
-
-
+            this.Close();//Cerramos el formulario y al ser secundario se mostrara el principal ( formularioInicio
         }
 
         private void FormularioUsuario_Load(object sender, EventArgs e)

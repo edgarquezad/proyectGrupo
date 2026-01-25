@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Data.SQLite;
 using System.Linq;
+using System.Net.Configuration;
 using System.Runtime.InteropServices.ComTypes;
 using System.Runtime.InteropServices.WindowsRuntime;
 using System.Security.Cryptography;
@@ -21,57 +22,54 @@ namespace ProyectoBiblioteca.Modelo
 
         public void Agregar(string nombre, string Apellido1, string Apellido2, int telefono)
         {
-            Usuario usuario = new Usuario(siguienteId, nombre, Apellido1, Apellido2, telefono);
-            Usuarios.Add(usuario);
-            siguienteId++;
+            string sql = @"INSERT INTO Usuarios (Nombre,Apellido_1,Apellido_2,Telefono) VALUES ( @Nomnre, @Apellido_1,@Apellido_2,@Telefono)";
+            SQLiteCommand cmd = new SQLiteCommand(sql);
+            cmd.Parameters.AddWithValue(@"Nombre", nombre);
+            cmd.Parameters.AddWithValue(@"Apellido_1", Apellido1);
+            cmd.Parameters.AddWithValue(@"Apellido_2", Apellido2);
+            cmd.Parameters.AddWithValue(@"Telefono", telefono);
+            Conexion.Ejecuta(sql, cmd);
+
+
         }
         public List<Usuario> filtrarUsuarios(string texto, int id)
         {
             List<Usuario> resultado = new List<Usuario>();
+            SQLiteCommand cmd;
 
-            using (SQLiteConnection cnn = Conexion.Conectar(ruta))
+
             {
 
-                string sql;
-                SQLiteCommand cmd = new SQLiteCommand();
-                cmd.Connection = cnn;
-                
-
                 if (id > 0)
-    {
-        sql = @"SELECT ID, Nombre, Apellido_1, Apellido_2, Telefono 
-    FROM Usuarios 
-    WHERE ID = @id";
+                {
+                    string sql = @"SELECT ID, Nombre, Apellido_1, Apellido_2, Telefono FROM Usuarios WHERE ID = @id";
+                    cmd = new SQLiteCommand(sql);
 
-        cmd.Parameters.AddWithValue("@id", id);
-    }
-    else
-    {
-        sql = @"SELECT ID, Nombre, Apellido_1, Apellido_2, Telefono 
-    FROM Usuarios 
-    WHERE Nombre LIKE @texto 
-       OR Apellido_1 LIKE @texto 
-       OR Apellido_2 LIKE @texto";
+                    cmd.Parameters.AddWithValue("@id", id);
+                }
+                else
+                {
+                  string sql = @"SELECT ID, Nombre, Apellido_1, Apellido_2, Telefono FROM Usuarios WHERE Nombre LIKE @texto OR Apellido_1 LIKE @texto OR Apellido_2 LIKE @texto";
+                    cmd= new SQLiteCommand(sql);
+                    cmd.Parameters.AddWithValue("@texto", "%" + texto + "%"); // para que sirven los %% no lo veo
+                }
 
-        cmd.Parameters.AddWithValue("@texto", "%" + texto + "%");
-    }
 
-    cmd.CommandText = sql;
 
-    using (SQLiteDataReader dr = cmd.ExecuteReader())
-    {
-        while (dr.Read())
-        {
-            resultado.Add(new Usuario(
-                dr.GetInt32(0),
-                dr.GetString(1),
-                dr.GetString(2),
-                dr.GetString(3),
-                dr.GetInt32(4)
-            ));
-        }
-    }
-}
+                using (SQLiteDataReader dr = Conexion.GetDataReader(ruta, cmd))
+                {
+                    while (dr.Read())
+                    {
+                        resultado.Add(new Usuario(
+                            dr.GetInt32(0),
+                            dr.GetString(1),
+                            dr.GetString(2),
+                            dr.GetString(3),
+                            dr.GetInt32(4)
+                        ));
+                    }
+                }
+            }
             return resultado;
         }
 
@@ -79,11 +77,12 @@ namespace ProyectoBiblioteca.Modelo
         {
             List<Usuario> lista = new List<Usuario>();
 
-            using (SQLiteConnection cnn = Conexion.Conectar(ruta))
-            {
+            SQLiteCommand cmd;
+            
                 string sql = "SELECT ID,Nombre,Apellido_1,Apellido_2,Telefono FROM Usuarios";
-                using (SQLiteCommand cmd = new SQLiteCommand(sql, cnn))
-                using (SQLiteDataReader dr = cmd.ExecuteReader())
+                cmd = new SQLiteCommand(sql);
+        
+                using (SQLiteDataReader dr = Conexion.GetDataReader(sql,cmd))
                 {
                     while (dr.Read())
                     {
@@ -97,7 +96,7 @@ namespace ProyectoBiblioteca.Modelo
                         ));
                     }
                 }
-            }
+            
 
             return lista;
         }
@@ -115,9 +114,6 @@ namespace ProyectoBiblioteca.Modelo
             return false;
 
         }
-
-
-
 
     }
 }

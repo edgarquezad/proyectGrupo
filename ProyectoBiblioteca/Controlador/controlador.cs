@@ -6,6 +6,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using ProyectoBiblioteca.Modelo;
+using ProyectoBiblioteca.Modelo.Libro;
 
 namespace ProyectoBiblioteca.Controlador
 {
@@ -88,7 +89,7 @@ namespace ProyectoBiblioteca.Controlador
 
         // Controlador de Libros 
 
-    
+        
 
 
     }

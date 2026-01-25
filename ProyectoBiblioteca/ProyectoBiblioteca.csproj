@@ -154,6 +154,12 @@
   <ItemGroup>
     <Folder Include="Modelo\Prestamos\" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\ControlUsuarioProyecto\ControlUsuarioProyecto\ControlUsuarioProyecto.csproj">
+      <Project>{36ef33b8-d7ca-40d7-8f57-627965174310}</Project>
+      <Name>ControlUsuarioProyecto</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Import Project="..\packages\Stub.System.Data.SQLite.Core.NetFramework.1.0.119.0\build\net46\Stub.System.Data.SQLite.Core.NetFramework.targets" Condition="Exists('..\packages\Stub.System.Data.SQLite.Core.NetFramework.1.0.119.0\build\net46\Stub.System.Data.SQLite.Core.NetFramework.targets')" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">

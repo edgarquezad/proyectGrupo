@@ -30,5 +30,10 @@ namespace ProyectoBiblioteca
             this.Close();//Cerramos el formulario y al ser secundario se mostrara el principal ( formularioInicio)
 
         }
+
+        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+            
+        }
     }
 }

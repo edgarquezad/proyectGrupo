@@ -1,6 +1,7 @@
 ﻿using System;
 using System.CodeDom;
 using System.Collections.Generic;
+using System.Data.SQLite;
 using System.Linq;
 using System.Linq.Expressions;
 using System.Text;
@@ -12,22 +13,21 @@ namespace ProyectoBiblioteca.Modelo.Libro
     {
         private List<Libro> Libros = new List<Libro>();
         private int siguienteId = 1;
-        private string ruta = @"Data Source =C:\Users\Edgar Q\Desktop\ProyectoGrupo\proyectGrupo\ProyectoBiblioteca\Biblioteca.db;version=3";
-
-        public ListaLibros(List<Libro> libros, int siguienteId, string ruta)
-        {
-            Libros = libros;
-            this.siguienteId = siguienteId;
-            this.ruta = ruta;
-        }
+        private string ruta = Properties.Settings.Default.conexion;
 
 
 
         public void AgregarLibros(string Titulo, string Escritor, int Ano_edicion, string Sinopsis, int Disponible)
         {
-            Libro libro = new Libro(siguienteId, Titulo, Escritor, Ano_edicion, Sinopsis, Disponible);
-            Libros.Add(libro);
-            siguienteId++;
+            SQLiteCommand cmd = new SQLiteCommand(@"INSERT INTO Libros (Titulo, Escritor, Ano_edicion, Sinopsis, Disponible)
+                                                    VALUES (@Titulo, @Escritor, @Ano_Edicion, @Sinopsis, @Disponible)");
+            cmd.Parameters.AddWithValue("@Titulo", Titulo);
+            cmd.Parameters.AddWithValue("@Escritor", Escritor);
+            cmd.Parameters.AddWithValue("@Ano_Edicion", Ano_edicion);
+            cmd.Parameters.AddWithValue("@Sinopsin", Sinopsis);
+            cmd.Parameters.AddWithValue("@Disponible", Disponible);
+            Conexion.Ejecuta(ruta, cmd);
+
 
         }
 
@@ -35,29 +35,61 @@ namespace ProyectoBiblioteca.Modelo.Libro
         {
 
             List<Libro> Resultadolibros = new List<Libro>();
-
-            foreach (Libro libro in Libros)
+            SQLiteCommand cmd;
+            if (id > 0)
             {
-                if (libro.Id == id)
+                cmd = new SQLiteCommand("SELECT * FROM Libros WHERE ID = @id ");
+                cmd.Parameters.AddWithValue("@id", id);
+            }
+            else
+            {
+                cmd = new SQLiteCommand("SELECT * FROM Libros WHERE Titulo LIKE @Titulo OR Escritor LIKE @Escritor");
+                cmd.Parameters.AddWithValue("@Titulo", texto);
+                cmd.Parameters.AddWithValue("@Escritor", texto);
+            }
+            using (SQLiteDataReader reader = Conexion.GetDataReader(ruta, cmd))
+            {
+                while (reader.Read())
                 {
-                    Resultadolibros.Add(libro);
-                }
-                else if (libro.Titulo == texto)
-                {
-                    Resultadolibros.Add(libro);
-                }
-                else if (libro.Escritor == texto)
-                {
-                    Resultadolibros.Add(libro);
+                    Resultadolibros.Add(new Libro(
+                        reader.GetInt32(0),
+                        reader.GetString(1),
+                        reader.GetString(2),
+                        reader.GetInt32(3),
+                        reader.GetString(4),
+                        reader.GetInt32(5)));
                 }
 
             }
             return Resultadolibros;
 
+
         }
+        public List<Libro> obtenerLibros()
+        {
+            List<Libro> resultadoLibros = new List<Libro>();
+            SQLiteCommand cmd;
+            string sql = "SELECT * FROM Libros";
+            cmd = new SQLiteCommand(sql);
+            using (SQLiteDataReader dr = Conexion.GetDataReader(sql, cmd))
+            {
+                while (dr.Read())
+                {
+                    resultadoLibros.Add(new Libro
+                        (dr.GetInt32(0),
+                        dr.GetString(1),
+                        dr.GetString(2),
+                        dr.GetInt32(3),
+                        dr.GetString(4),
+                        dr.GetInt32(5)
+                        ));
 
+                }
 
+            }
+            return resultadoLibros;
 
+        }
     }
 }
 
