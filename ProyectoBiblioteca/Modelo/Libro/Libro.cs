@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace ProyectoBiblioteca.Modelo.Libro
 {
-    internal class Libro
+    public class Libro
     {
             
         public int Id { get; set; }

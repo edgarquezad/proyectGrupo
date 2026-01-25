@@ -37,9 +37,8 @@
             this.menUsuarios = new System.Windows.Forms.ToolStripMenuItem();
             this.menLibros = new System.Windows.Forms.ToolStripMenuItem();
             this.menPrestamos = new System.Windows.Forms.ToolStripMenuItem();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.tableLayoutPanelLibros = new System.Windows.Forms.TableLayoutPanel();
             this.msPrincipal.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
             // msPrincipal
@@ -132,31 +131,33 @@
             this.menPrestamos.Size = new System.Drawing.Size(121, 38);
             this.menPrestamos.Text = "Prestamos";
             // 
-            // dataGridView1
+            // tableLayoutPanelLibros
             // 
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.dataGridView1.Location = new System.Drawing.Point(0, 72);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.RowHeadersWidth = 51;
-            this.dataGridView1.RowTemplate.Height = 24;
-            this.dataGridView1.Size = new System.Drawing.Size(800, 378);
-            this.dataGridView1.TabIndex = 4;
-            this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
+            this.tableLayoutPanelLibros.ColumnCount = 1;
+            this.tableLayoutPanelLibros.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
+            this.tableLayoutPanelLibros.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 20F));
+            this.tableLayoutPanelLibros.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.tableLayoutPanelLibros.Location = new System.Drawing.Point(0, 72);
+            this.tableLayoutPanelLibros.Name = "tableLayoutPanelLibros";
+            this.tableLayoutPanelLibros.RowCount = 1;
+            this.tableLayoutPanelLibros.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
+            this.tableLayoutPanelLibros.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
+            this.tableLayoutPanelLibros.Size = new System.Drawing.Size(800, 378);
+            this.tableLayoutPanelLibros.TabIndex = 4;
+            this.tableLayoutPanelLibros.Paint += new System.Windows.Forms.PaintEventHandler(this.tableLayoutPanelLibros_Paint);
             // 
             // FormularioLibros
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.dataGridView1);
+            this.Controls.Add(this.tableLayoutPanelLibros);
             this.Controls.Add(this.msPrincipal);
             this.Name = "FormularioLibros";
             this.Text = "FormularioLibros";
             this.Load += new System.EventHandler(this.FormularioLibros_Load);
             this.msPrincipal.ResumeLayout(false);
             this.msPrincipal.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -173,6 +174,6 @@
         private System.Windows.Forms.ToolStripMenuItem menUsuarios;
         private System.Windows.Forms.ToolStripMenuItem menLibros;
         private System.Windows.Forms.ToolStripMenuItem menPrestamos;
-        private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.TableLayoutPanel tableLayoutPanelLibros;
     }
 }

@@ -16,7 +16,8 @@ namespace ProyectoBiblioteca.Controlador
         /// <summary>
         ///USUARIO  controlador de insertar usuaruio y filtrar usuario , "faltaria eliminar usuario, intentar completarlo "
         /// </summary>
-        private Empleados lista = new Empleados();
+        private ListaUsuarios listaUsuarios= new ListaUsuarios();
+        private ListaLibros listaLibros= new ListaLibros();
 
  
         public void InsertarUsuario(string nombre, string Apellido1, string Apellido2, int telefono)
@@ -36,7 +37,7 @@ namespace ProyectoBiblioteca.Controlador
                 errores += "falta numero de telefono " + Environment.NewLine;
             }
 
-            if (lista.usuarioExistente(telefono))
+            if (listaUsuarios.usuarioExistente(telefono))
                 errores += $"Ya existe un usuario registrado con este telefono: {telefono} " + Environment.NewLine;
 
 
@@ -47,7 +48,7 @@ namespace ProyectoBiblioteca.Controlador
 
 
 
-            lista.Agregar(nombre, Apellido1, Apellido2, telefono);
+            listaUsuarios.Agregar(nombre, Apellido1, Apellido2, telefono);
 
 
 
@@ -60,9 +61,9 @@ namespace ProyectoBiblioteca.Controlador
             List<Usuario> usuarios;
 
             if (esId)
-                usuarios = lista.filtrarUsuarios("", id);
+                usuarios = listaUsuarios.filtrarUsuarios("", id);
             else 
-                usuarios = lista.filtrarUsuarios(texto,0);
+                usuarios = listaUsuarios.filtrarUsuarios(texto,0);
             
             if (usuarios.Count == 0)
                 throw new Exception("No se encontraron usuarios con esos criterios");
@@ -78,7 +79,7 @@ namespace ProyectoBiblioteca.Controlador
 
         }
         public List<Usuario> MostrarUsuarios(){
-            List<Usuario> usuarios = lista.obtenerUsuarios();
+            List<Usuario> usuarios = listaUsuarios.obtenerUsuarios();
             if (usuarios.Count == 0)
                 throw new Exception("La lista de usuarios está vacía");
             else
@@ -89,6 +90,15 @@ namespace ProyectoBiblioteca.Controlador
 
         // Controlador de Libros 
 
+       public List<Libro> MostrarLibros() { 
+
+
+            List<Libro> libros = listaLibros.obtenerLibros();
+     
+              
+            return libros;
+
+        }
         
 
 

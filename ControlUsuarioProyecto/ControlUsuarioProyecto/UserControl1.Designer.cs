@@ -52,7 +52,7 @@
             this.tblpPricipal.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
             this.tblpPricipal.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 60F));
             this.tblpPricipal.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 60F));
-            this.tblpPricipal.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 26F));
+            this.tblpPricipal.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 27F));
             this.tblpPricipal.Controls.Add(this.ckSeleccionar, 1, 0);
             this.tblpPricipal.Controls.Add(this.btAgregar, 4, 0);
             this.tblpPricipal.Controls.Add(this.btEliminar, 5, 0);
@@ -146,6 +146,7 @@
             this.txtApellido.Name = "txtApellido";
             this.txtApellido.Size = new System.Drawing.Size(224, 22);
             this.txtApellido.TabIndex = 1;
+            this.txtApellido.TextChanged += new System.EventHandler(this.txtApellido_TextChanged);
             // 
             // ControlUsuario
             // 

@@ -9,7 +9,7 @@ using System.Threading.Tasks;
 
 namespace ProyectoBiblioteca.Modelo.Libro
 {
-    internal class ListaLibros
+  internal class ListaLibros
     {
         private List<Libro> Libros = new List<Libro>();
         private int siguienteId = 1;
@@ -24,9 +24,11 @@ namespace ProyectoBiblioteca.Modelo.Libro
             cmd.Parameters.AddWithValue("@Titulo", Titulo);
             cmd.Parameters.AddWithValue("@Escritor", Escritor);
             cmd.Parameters.AddWithValue("@Ano_Edicion", Ano_edicion);
-            cmd.Parameters.AddWithValue("@Sinopsin", Sinopsis);
+            cmd.Parameters.AddWithValue("@Sinopsis", Sinopsis);
             cmd.Parameters.AddWithValue("@Disponible", Disponible);
-            Conexion.Ejecuta(ruta, cmd);
+           // Conexion.Ejecuta(ruta, cmd);
+           
+            Conexion.Ejecuta(Properties.Settings.Default.conexion, cmd);
 
 
         }
@@ -71,7 +73,7 @@ namespace ProyectoBiblioteca.Modelo.Libro
             SQLiteCommand cmd;
             string sql = "SELECT * FROM Libros";
             cmd = new SQLiteCommand(sql);
-            using (SQLiteDataReader dr = Conexion.GetDataReader(sql, cmd))
+            using (SQLiteDataReader dr = Conexion.GetDataReader(ruta,cmd))
             {
                 while (dr.Read())
                 {
@@ -90,6 +92,16 @@ namespace ProyectoBiblioteca.Modelo.Libro
             return resultadoLibros;
 
         }
+        public void EliminarLibro(int id)
+        {
+            string sql = $"DELETE FROM Libros WHERE ID={id}";
+            SQLiteCommand cmd = new SQLiteCommand(sql);
+           // Conexion.Ejecuta(Properties.Settings.Default.conexion, cmd);
+            Conexion.Ejecuta(ruta,cmd);
+        }
     }
+
+
+    
 }
 

@@ -12,7 +12,7 @@ using System.Threading.Tasks;
 
 namespace ProyectoBiblioteca.Modelo
 {
-    internal class Empleados
+    internal class ListaUsuarios
     {
         private List<Usuario> Usuarios = new List<Usuario>();
         private int siguienteId = 1;
@@ -75,7 +75,7 @@ namespace ProyectoBiblioteca.Modelo
 
         public List<Usuario> obtenerUsuarios()
         {
-            List<Usuario> lista = new List<Usuario>();
+            List<Usuario> lista2 = new List<Usuario>();
 
             SQLiteCommand cmd;
             
@@ -86,7 +86,7 @@ namespace ProyectoBiblioteca.Modelo
                 {
                     while (dr.Read())
                     {
-                        lista.Add(new Usuario(
+                        lista2.Add(new Usuario(
                             dr.GetInt32(0),
                             dr.GetString(1),
                             dr.GetString(2),
@@ -98,7 +98,7 @@ namespace ProyectoBiblioteca.Modelo
                 }
             
 
-            return lista;
+            return lista2;
         }
 
         public bool usuarioExistente(int telefono)

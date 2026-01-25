@@ -8,6 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using ProyectoBiblioteca.Controlador;
+using ProyectoBiblioteca.Modelo.Libro;
 
 namespace ProyectoBiblioteca
 {
@@ -22,7 +23,7 @@ namespace ProyectoBiblioteca
 
         private void FormularioLibros_Load(object sender, EventArgs e)
         {
-
+            cargarDatos(libroL.MostrarLibros());
         }
 
         private void smiInsertar_Click(object sender, EventArgs e)
@@ -31,9 +32,59 @@ namespace ProyectoBiblioteca
 
         }
 
-        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        private void tableLayoutPanelLibros_Paint(object sender, PaintEventArgs e)
         {
-            
+
+        }
+        public void cargarDatos(List<Libro> libros) ///mallll
+
+        {
+            tableLayoutPanelLibros.Controls.Clear();
+            tableLayoutPanelLibros.RowStyles.Clear();
+            tableLayoutPanelLibros.RowCount = 0;
+
+            int fila = 0;
+
+            foreach (Libro libro in libros)
+            {
+                ControlUsuarioProyecto.ControlUsuario control =
+                    new ControlUsuarioProyecto.ControlUsuario();
+
+                control.Id = libro.Id;
+                control.Nombre = libro.Titulo;
+                control.Apellido = libro.Escritor; // reutilizas el control
+                control.Seleccionar = libro.Disponible == 0;
+
+                control.eliminarLibro += Control_EliminarLibro;
+                control.AgregarLibro += Control_AgregarLibro;
+
+                control.Dock = DockStyle.Fill;
+
+                tableLayoutPanelLibros.RowCount++;
+                tableLayoutPanelLibros.RowStyles.Add(
+                    new RowStyle(SizeType.AutoSize));
+
+                tableLayoutPanelLibros.Controls.Add(control, 0, fila);
+                fila++;
+            }
+
+
+
+
+        }
+        private void Control_EliminarLibro(object sender, int e)
+        {
+            throw new NotImplementedException();
+        }
+        private void Control_AgregarLibro(object sender, int e)
+        {
+            throw new NotImplementedException();
+        }
+
+
+        private void controlUsuario1_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

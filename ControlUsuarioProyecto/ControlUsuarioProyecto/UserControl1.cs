@@ -109,5 +109,10 @@ namespace ControlUsuarioProyecto
 
             }
         }
+
+        private void txtApellido_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }
