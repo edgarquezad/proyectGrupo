@@ -97,19 +97,19 @@ namespace ProyectoBiblioteca.Modelo
             return lista2;
         }
 
-        public bool usuarioExistente(int telefono)
-        {
-          // foreach (Usuario usuarioR in Usuarios)
-            {
-          //      if (usuarioR.Telefono == telefono)
-                {
-                    return true;
-                }
-            }
+        /* public bool usuarioExistente(int telefono) //
+         {
+              foreach (Usuario usuarioR in Usuarios)
+               {
+             //      if (usuarioR.Telefono == telefono)
+                   {
+                       return true;
+                   }
+               }
 
-         //   return false;
+           return false;
 
-        }
+           }*/
 
     }
 }
