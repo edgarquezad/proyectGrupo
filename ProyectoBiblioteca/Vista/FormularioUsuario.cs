@@ -13,13 +13,13 @@ using ProyectoBiblioteca.Modelo;
 
 namespace ProyectoBiblioteca
 {
-    public partial class AgregarUsuario : Form
+    public partial class FormularioUsuario : Form
     {
 
 
-        public controlador ControladorAgregarU { get; set; }
+        public controlador UsuarioU{ get; set; }
 
-        public AgregarUsuario()
+        public FormularioUsuario()
         {
 
             InitializeComponent();
@@ -42,7 +42,7 @@ namespace ProyectoBiblioteca
         {
             try
             {
-                ControladorAgregarU.InsertarUsuario(txbNombre.Text, txbApellido.Text, txbApellido2.Text, (int.Parse)(txbTelefono.Text));
+                UsuarioU.InsertarUsuario(txbNombre.Text, txbApellido.Text, txbApellido2.Text, (int.Parse)(txbTelefono.Text));
                 MessageBox.Show("has insertado correctamente un usuarui nuevo ");
                 limpiar();
             }
@@ -57,7 +57,7 @@ namespace ProyectoBiblioteca
             try
             {
                 string texto = txbBuscarUsuario.Text;
-                var filtrado = ControladorAgregarU.FiltrarUsuarios(texto);
+                var filtrado = UsuarioU.FiltrarUsuarios(texto);
 
                 foreach (string usuario in filtrado)
                 {
@@ -72,11 +72,19 @@ namespace ProyectoBiblioteca
 
         private void btCerrar_Click(object sender, EventArgs e)
         {
-            this.Close();
+            this.Close();//Cerramos el formulario y al ser secundario se mostrara el principal ( formularioInicio)
 
 
         }
 
+        private void FormularioUsuario_Load(object sender, EventArgs e)
+        {
 
+        }
+
+        private void smiInsertar_Click(object sender, EventArgs e)
+        {
+            this.Close(); //Cerramos el formulario y al ser secundario se mostrara el principal ( formularioInicio)
+        }
     }
 }

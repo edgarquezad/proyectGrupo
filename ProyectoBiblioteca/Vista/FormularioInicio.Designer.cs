@@ -92,6 +92,7 @@
             this.menLibros.Padding = new System.Windows.Forms.Padding(5);
             this.menLibros.Size = new System.Drawing.Size(91, 38);
             this.menLibros.Text = "Libros ";
+            this.menLibros.Click += new System.EventHandler(this.menLibros_Click);
             // 
             // menPrestamos
             // 

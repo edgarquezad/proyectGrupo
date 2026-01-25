@@ -1,6 +1,6 @@
 ﻿namespace ProyectoBiblioteca
 {
-    partial class AgregarUsuario
+    partial class FormularioUsuario
     {
         /// <summary>
         /// Required designer variable.
@@ -99,6 +99,7 @@
             this.smiInsertar.Name = "smiInsertar";
             this.smiInsertar.Size = new System.Drawing.Size(240, 68);
             this.smiInsertar.Text = "Ayuntamiento Vitoria Gasteiz";
+            this.smiInsertar.Click += new System.EventHandler(this.smiInsertar_Click);
             // 
             // smiInsertarEmpleado
             // 
@@ -457,15 +458,16 @@
             this.btCerrar.UseVisualStyleBackColor = false;
             this.btCerrar.Click += new System.EventHandler(this.btCerrar_Click);
             // 
-            // AgregarUsuario
+            // FormularioUsuario
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.tableLayoutPanel1);
             this.Controls.Add(this.msPrincipal);
-            this.Name = "AgregarUsuario";
-            this.Text = "AgregarUsuario";
+            this.Name = "FormularioUsuario";
+            this.Text = "Formulario Usuario";
+            this.Load += new System.EventHandler(this.FormularioUsuario_Load);
             this.msPrincipal.ResumeLayout(false);
             this.msPrincipal.PerformLayout();
             this.tableLayoutPanel1.ResumeLayout(false);

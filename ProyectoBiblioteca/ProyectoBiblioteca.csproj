@@ -53,18 +53,24 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="AgregarUsuario.cs">
+    <Compile Include="Vista\FormularioInicio.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="AgregarUsuario.Designer.cs">
-      <DependentUpon>AgregarUsuario.cs</DependentUpon>
+    <Compile Include="Vista\FormularioInicio.Designer.cs">
+      <DependentUpon>FormularioInicio.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Vista\FormularioUsuario.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Vista\FormularioUsuario.Designer.cs">
+      <DependentUpon>FormularioUsuario.cs</DependentUpon>
     </Compile>
     <Compile Include="Controlador\controlador.cs" />
-    <Compile Include="Form1.cs">
+    <Compile Include="Vista\FormularioLibros.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form1.Designer.cs">
-      <DependentUpon>Form1.cs</DependentUpon>
+    <Compile Include="Vista\FormularioLibros.Designer.cs">
+      <DependentUpon>FormularioLibros.cs</DependentUpon>
     </Compile>
     <Compile Include="Modelo\Conexion.cs" />
     <Compile Include="Modelo\Libro\Libro.cs" />
@@ -73,11 +79,14 @@
     <Compile Include="Modelo\Usuario\Usuario.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="AgregarUsuario.resx">
-      <DependentUpon>AgregarUsuario.cs</DependentUpon>
+    <EmbeddedResource Include="Vista\FormularioInicio.resx">
+      <DependentUpon>FormularioInicio.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Form1.resx">
-      <DependentUpon>Form1.cs</DependentUpon>
+    <EmbeddedResource Include="Vista\FormularioLibros.resx">
+      <DependentUpon>FormularioLibros.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Vista\FormularioUsuario.resx">
+      <DependentUpon>FormularioUsuario.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -142,7 +151,9 @@
   <ItemGroup>
     <None Include="Iconos\Person Male Skin Type 3.png" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <Folder Include="Modelo\Prestamos\" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Import Project="..\packages\Stub.System.Data.SQLite.Core.NetFramework.1.0.119.0\build\net46\Stub.System.Data.SQLite.Core.NetFramework.targets" Condition="Exists('..\packages\Stub.System.Data.SQLite.Core.NetFramework.1.0.119.0\build\net46\Stub.System.Data.SQLite.Core.NetFramework.targets')" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
