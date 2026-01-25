@@ -14,11 +14,7 @@ namespace ProyectoBiblioteca.Modelo
 {
     internal class ListaUsuarios
     {
-        private List<Usuario> Usuarios = new List<Usuario>();
-        private int siguienteId = 1;
         private string ruta = Properties.Settings.Default.conexion;
-
-
 
         public void Agregar(string nombre, string Apellido1, string Apellido2, int telefono)
         {
@@ -103,15 +99,15 @@ namespace ProyectoBiblioteca.Modelo
 
         public bool usuarioExistente(int telefono)
         {
-            foreach (Usuario usuarioR in Usuarios)
+          // foreach (Usuario usuarioR in Usuarios)
             {
-                if (usuarioR.Telefono == telefono)
+          //      if (usuarioR.Telefono == telefono)
                 {
                     return true;
                 }
             }
 
-            return false;
+         //   return false;
 
         }
 

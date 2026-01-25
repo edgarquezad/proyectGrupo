@@ -11,8 +11,7 @@ namespace ProyectoBiblioteca.Modelo.Libro
 {
   internal class ListaLibros
     {
-        private List<Libro> Libros = new List<Libro>();
-        private int siguienteId = 1;
+        
         private string ruta = Properties.Settings.Default.conexion;
 
 
