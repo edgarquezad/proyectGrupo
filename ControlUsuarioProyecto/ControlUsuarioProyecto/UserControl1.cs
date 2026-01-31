@@ -95,30 +95,33 @@ namespace ControlUsuarioProyecto
 
         private void ckSeleccionar_CheckedChanged(object sender, EventArgs e)
         {
-            if (ckSeleccionar.Checked)
-            {
-                DialogResult resultado = MessageBox.Show("estas seguro de dar de baja al usuario "," dar de baja ", 
-                 MessageBoxButtons.OKCancel, MessageBoxIcon.Question);
-                if (resultado == DialogResult.Cancel)
-                {
-                    ckSeleccionar.Checked = false;
+       
+
+              //  DialogResult resultado = MessageBox.Show("estas seguro de dar de baja al usuario "," dar de baja ", 
+              //    MessageBoxButtons.OKCancel, MessageBoxIcon.Question);
+                /*   if (resultado == DialogResult.Cancel)
+                   {
+                       ckSeleccionar.Checked = false;
 
 
-                }
-                if (resultado == DialogResult.OK)
-                {
-                    txtApellido.Text = "";
-                    txtNombre.Text = "";
-                    ckSeleccionar.Checked = false;
-                }
+                   }
+                   if (resultado == DialogResult.OK)
+                   {
+                       txtApellido.Text = "";
+                       txtNombre.Text = "";
+                       ckSeleccionar.Checked = false;
+                   }
 
 
-            }
-        }
+               }
+           }*/
+             }
 
         private void btEliminar_Click_1(object sender, EventArgs e)
         {
+            if (ckSeleccionar.Checked) { 
             btEliminar_Click(sender, e);
+            }
         }
 
         private void tableLayoutPanel2_Paint(object sender, PaintEventArgs e)

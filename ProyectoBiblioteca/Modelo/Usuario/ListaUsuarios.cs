@@ -18,13 +18,13 @@ namespace ProyectoBiblioteca.Modelo
 
         public void Agregar(string nombre, string Apellido1, string Apellido2, int telefono)
         {
-            string sql = @"INSERT INTO Usuarios (Nombre,Apellido_1,Apellido_2,Telefono) VALUES ( @Nomnre, @Apellido_1,@Apellido_2,@Telefono)";
+            string sql = "INSERT INTO Usuarios (Nombre,Apellido_1,Apellido_2,Telefono) VALUES ( @Nombre, @Apellido_1,@Apellido_2,@Telefono)";
             SQLiteCommand cmd = new SQLiteCommand(sql);
-            cmd.Parameters.AddWithValue(@"Nombre", nombre);
-            cmd.Parameters.AddWithValue(@"Apellido_1", Apellido1);
-            cmd.Parameters.AddWithValue(@"Apellido_2", Apellido2);
-            cmd.Parameters.AddWithValue(@"Telefono", telefono);
-            Conexion.Ejecuta(sql, cmd);
+            cmd.Parameters.AddWithValue(@"Nombre",nombre);
+            cmd.Parameters.AddWithValue(@"Apellido_1",Apellido1);
+            cmd.Parameters.AddWithValue(@"Apellido_2",Apellido2);
+            cmd.Parameters.AddWithValue(@"Telefono",telefono);
+            Conexion.Ejecuta(ruta, cmd);
 
 
         }

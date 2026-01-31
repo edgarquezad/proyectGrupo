@@ -38,7 +38,7 @@ namespace ProyectoBiblioteca
             try
             {
                 UsuarioU.InsertarUsuario(txbNombre.Text, txbApellido.Text, txbApellido2.Text, (int.Parse)(txbTelefono.Text));
-                MessageBox.Show("has insertado correctamente un usuarui nuevo ");
+                MessageBox.Show("has insertado correctamente un usuario nuevo ");
                 limpiar();
             }
             catch (Exception ex)
