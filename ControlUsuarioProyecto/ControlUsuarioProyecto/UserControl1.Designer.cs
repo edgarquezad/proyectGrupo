@@ -66,7 +66,6 @@
             this.tblpPricipal.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
             this.tblpPricipal.Size = new System.Drawing.Size(663, 74);
             this.tblpPricipal.TabIndex = 0;
-            this.tblpPricipal.Paint += new System.Windows.Forms.PaintEventHandler(this.tblpPricipal_Paint);
             // 
             // ckSeleccionar
             // 
@@ -100,6 +99,7 @@
             this.btEliminar.TabIndex = 4;
             this.btEliminar.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btEliminar.UseVisualStyleBackColor = false;
+            this.btEliminar.Click += new System.EventHandler(this.btEliminar_Click_1);
             // 
             // tableLayoutPanel1
             // 
@@ -138,6 +138,7 @@
             this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
             this.tableLayoutPanel2.Size = new System.Drawing.Size(230, 68);
             this.tableLayoutPanel2.TabIndex = 6;
+            this.tableLayoutPanel2.Paint += new System.Windows.Forms.PaintEventHandler(this.tableLayoutPanel2_Paint);
             // 
             // txtApellido
             // 
@@ -146,7 +147,6 @@
             this.txtApellido.Name = "txtApellido";
             this.txtApellido.Size = new System.Drawing.Size(224, 22);
             this.txtApellido.TabIndex = 1;
-            this.txtApellido.TextChanged += new System.EventHandler(this.txtApellido_TextChanged);
             // 
             // ControlUsuario
             // 

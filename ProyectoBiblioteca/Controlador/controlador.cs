@@ -18,12 +18,11 @@ namespace ProyectoBiblioteca.Controlador
         /// </summary>
         private ListaUsuarios listaUsuarios= new ListaUsuarios();
         private ListaLibros listaLibros= new ListaLibros();
+     
 
  
         public void InsertarUsuario(string nombre, string Apellido1, string Apellido2, int telefono)
         {
-
-
             string errores = "";
 
             if (nombre.Trim().Length == 0)
@@ -33,26 +32,16 @@ namespace ProyectoBiblioteca.Controlador
                 errores += "Falta el primer apellido" + Environment.NewLine;
 
             if (telefono <= 9)
-            {
+            
                 errores += "falta numero de telefono " + Environment.NewLine;
-            }
-
-            if (listaUsuarios.usuarioExistente(telefono))
-                errores += $"Ya existe un usuario registrado con este telefono: {telefono} " + Environment.NewLine;
-
-
-
+           
 
             if (!string.IsNullOrEmpty(errores)) // si el error es de¡iferente de nulo  vacio entra el error 
                 throw new Exception(errores);
-
-
-
             listaUsuarios.Agregar(nombre, Apellido1, Apellido2, telefono);
-
-
-
         }
+
+
         public List<string> FiltrarUsuarios(string texto)
 
         {
@@ -71,10 +60,8 @@ namespace ProyectoBiblioteca.Controlador
             List<string> resultado = new List<string>();
 
             foreach (Usuario u in usuarios)
-            {
-                resultado.Add($"{u.Id} - {u.Nombre} {u.Apellido1} {u.Apellido2} ({u.Telefono})");
-            }
 
+                resultado.Add($"{u.Id} - {u.Nombre} {u.Apellido1} {u.Apellido2} ({u.Telefono})");
             return resultado;
 
         }
@@ -92,13 +79,18 @@ namespace ProyectoBiblioteca.Controlador
 
        public List<Libro> MostrarLibros() { 
 
-
-            List<Libro> libros = listaLibros.obtenerLibros();
-     
-              
+            List<Libro> libros = listaLibros.obtenerLibros();       
             return libros;
-
         }
+
+        public bool eliminarLibro(int id )
+        {
+            listaLibros.EliminarLibro(id);
+            
+            return true ;
+           
+        
+    }
         
 
 

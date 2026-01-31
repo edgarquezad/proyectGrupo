@@ -12,7 +12,7 @@ namespace ControlUsuarioProyecto
 {
     public partial class ControlUsuario : UserControl
     {
-
+    
         public enum TipoEntidad { Usuario ,Libro}
         public TipoEntidad tipo {get; set;}
             
@@ -20,16 +20,12 @@ namespace ControlUsuarioProyecto
         {
             InitializeComponent();
         }
-
-        private void tblpPricipal_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
         public override Size MinimumSize
         {
             get => base.MinimumSize;
             set => base.MinimumSize = new Size(560, 60);
         }
+
         public int Id
         {
             get => id;
@@ -55,35 +51,45 @@ namespace ControlUsuarioProyecto
 
         }
         private int id;
-
-        public event EventHandler<int> eliminarUsuario;
-
-        public event EventHandler<int> AgregarUsuario;
-
-        public event EventHandler<int> eliminarLibro;
-
-        public event EventHandler<int> AgregarLibro;
-
-
-        public void rellenarFormulario()
+        public class ClickarBotonSeleccionarEventArgs : EventArgs
         {
-            Nombre = txtNombre.Text;
-            Apellido = txtApellido.Text;
+            public int Id { get; }
+            public ClickarBotonSeleccionarEventArgs(int id)
+            {
+                Id = id;
+            }
         }
+        public event EventHandler<ClickarBotonSeleccionarEventArgs> eliminarUsuario;
+
+        public event EventHandler<ClickarBotonSeleccionarEventArgs> AgregarUsuario;
+
+        public event EventHandler<ClickarBotonSeleccionarEventArgs>eliminarLibro;
+
+        public event EventHandler<ClickarBotonSeleccionarEventArgs> AgregarLibro;
+
+
         private void btAgregar_Click(object sender, EventArgs e)
         {
             if (tipo == TipoEntidad.Usuario) {
-                AgregarUsuario?.Invoke(this, Id);
+                AgregarUsuario?.Invoke(this, new ClickarBotonSeleccionarEventArgs(id));
             }
             else if (tipo == TipoEntidad.Libro) {
-                AgregarLibro?.Invoke(this, Id);
+                AgregarLibro?.Invoke(this, new ClickarBotonSeleccionarEventArgs(id));
             }
        
         }
         private void btEliminar_Click(object sender, EventArgs e)
         {
-            eliminarUsuario?.Invoke(this, Id);
-            eliminarLibro?.Invoke(this, Id);
+            if (tipo == TipoEntidad.Usuario)
+            {
+                eliminarUsuario?.Invoke(this, new ClickarBotonSeleccionarEventArgs(id));
+            }
+            else if (tipo == TipoEntidad.Libro)
+            {
+                eliminarLibro?.Invoke(this, new ClickarBotonSeleccionarEventArgs(id));
+            }
+            else
+                throw new Exception("mal error ");
 
         }
 
@@ -110,7 +116,12 @@ namespace ControlUsuarioProyecto
             }
         }
 
-        private void txtApellido_TextChanged(object sender, EventArgs e)
+        private void btEliminar_Click_1(object sender, EventArgs e)
+        {
+            btEliminar_Click(sender, e);
+        }
+
+        private void tableLayoutPanel2_Paint(object sender, PaintEventArgs e)
         {
 
         }

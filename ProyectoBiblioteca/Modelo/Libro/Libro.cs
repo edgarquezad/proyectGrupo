@@ -26,5 +26,6 @@ namespace ProyectoBiblioteca.Modelo.Libro
             Sinopsis = sinopsis;
             Disponible = disponible;
         }
+     
     }
 }
