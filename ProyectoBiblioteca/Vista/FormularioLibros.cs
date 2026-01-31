@@ -26,7 +26,7 @@ namespace ProyectoBiblioteca
 
         private void FormularioLibros_Load(object sender, EventArgs e)
         {
-            cargarDatos();
+            Cargar(libroL.CargarDatos());
         }
 
         private void smiInsertar_Click(object sender, EventArgs e)
@@ -39,52 +39,41 @@ namespace ProyectoBiblioteca
         {
             
         }
-        public void cargarDatos() ///mallll
-
+        public void Cargar(DataTable datos)
         {
-             
             tableLayoutPanelLibros.Controls.Clear();
-            tableLayoutPanelLibros.RowStyles.Clear();
-            tableLayoutPanelLibros.RowCount = 0;
 
-            int fila = 0;
+            int nuevaFila = 1;
 
-            foreach (Libro libro in libroL.MostrarLibros()) {
-                {
-                    ControlUsuarioProyecto.ControlUsuario control = new ControlUsuarioProyecto.ControlUsuario();
-                    control.tipo = ControlUsuarioProyecto.ControlUsuario.TipoEntidad.Libro;  // en el control de usuario usamos un enum ( libro o usuario ) para poder usar la funciones elimniarLibro EliminarUsuario etc con un mismo boton
+            foreach (DataRow row in datos.Rows)
+            {
+             ControlUsuarioProyecto.ControlUsuario control = new ControlUsuarioProyecto.ControlUsuario();
+                control.tipo = ControlUsuarioProyecto.ControlUsuario.TipoEntidad.Libro;
+                control.Id = (int)row.Field<long>("id");
+                control.Nombre = $"{row.Field<string>("Titulo")} ";
+                control.Apellido = row.Field<string>("Escritor");
+             
+                control.eliminarLibro += Control_eliminarLibro;
+                control.AgregarLibro += Control_AgregarLibro1;
+                control.Dock = DockStyle.Fill;
+                tableLayoutPanelLibros.RowCount = tableLayoutPanelLibros.RowCount + 1;
+                tableLayoutPanelLibros.RowStyles.Insert(nuevaFila, new RowStyle(SizeType.AutoSize));
+                tableLayoutPanelLibros.Controls.Add(control, 0, nuevaFila);
+                nuevaFila++;
+            }
 
-                    control.Id = libro.Id;
-                    control.Nombre = libro.Titulo;
-                    control.Apellido = libro.Escritor; // reutilizas el control
-                    control.Seleccionar = libro.Disponible == 0;
-
-                    control.AgregarLibro += Control_AgregarLibro1;
-                    control.eliminarLibro += Control_eliminarLibro;
-
-                    control.Dock = DockStyle.Fill;
-
-                    tableLayoutPanelLibros.RowCount++;
-                    tableLayoutPanelLibros.RowStyles.Add(
-                        new RowStyle(SizeType.AutoSize));
-
-                    tableLayoutPanelLibros.Controls.Add(control, 0, fila);
-                    fila++;
-                }
-
-
-
-
-            }}
+        }
 
         private void Control_eliminarLibro(object sender, ControlUsuarioProyecto.ControlUsuario.ClickarBotonSeleccionarEventArgs e)
         {
-           
             libroL.eliminarLibro(e.Id);
-            cargarDatos();
+            Cargar(libroL.CargarDatos());
+
             MessageBox.Show("libro eliminado correctamente");
-           
+
         }
+
+       
 
         private void Control_AgregarLibro1(object sender, ControlUsuarioProyecto.ControlUsuario.ClickarBotonSeleccionarEventArgs e)
         {

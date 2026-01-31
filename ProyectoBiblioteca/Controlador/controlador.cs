@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Data;
 using System.Drawing;
 using System.Drawing.Text;
 using System.Linq;
@@ -78,20 +79,20 @@ namespace ProyectoBiblioteca.Controlador
         // Controlador de Libros 
 
        public List<Libro> MostrarLibros() { 
-
-            List<Libro> libros = listaLibros.obtenerLibros();       
-            return libros;
+             return listaLibros.obtenerLibros();
         }
 
         public bool eliminarLibro(int id )
         {
             listaLibros.EliminarLibro(id);
             
-            return true ;
-           
-        
+            return true ;  
     }
-        
+        public DataTable CargarDatos()
+        {
+            return listaLibros.CargarTodo();
+        }
+
 
 
     }

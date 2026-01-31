@@ -1,6 +1,7 @@
 ﻿using System;
 using System.CodeDom;
 using System.Collections.Generic;
+using System.Data;
 using System.Data.SQLite;
 using System.Linq;
 using System.Linq.Expressions;
@@ -97,6 +98,14 @@ namespace ProyectoBiblioteca.Modelo.Libro
             SQLiteCommand cmd = new SQLiteCommand(sql);
            // Conexion.Ejecuta(Properties.Settings.Default.conexion, cmd);
             Conexion.Ejecuta(ruta,cmd);
+        }
+        public DataTable CargarTodo()
+        {
+            DataTable datos = new DataTable();
+            string sql = "SELECT * FROM Libros";
+            SQLiteCommand cmd = new SQLiteCommand(sql);
+            datos = Conexion.GetDataTable(Properties.Settings.Default.conexion, cmd);
+            return datos;
         }
     }
 

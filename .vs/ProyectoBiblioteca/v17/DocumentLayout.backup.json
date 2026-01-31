@@ -3,28 +3,32 @@
   "WorkspaceRootPath": "C:\\Users\\Edgar Q\\Desktop\\EntregaMaider26\\proyectGrupo\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{4B08E2F6-4AD2-4822-BBA7-16ADFA1EFA95}|ProyectoBiblioteca\\ProyectoBiblioteca.csproj|c:\\users\\edgar q\\desktop\\entregamaider26\\proyectgrupo\\proyectobiblioteca\\controlador\\controlador.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{4B08E2F6-4AD2-4822-BBA7-16ADFA1EFA95}|ProyectoBiblioteca\\ProyectoBiblioteca.csproj|solutionrelative:proyectobiblioteca\\controlador\\controlador.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{4B08E2F6-4AD2-4822-BBA7-16ADFA1EFA95}|ProyectoBiblioteca\\ProyectoBiblioteca.csproj|c:\\users\\edgar q\\desktop\\entregamaider26\\proyectgrupo\\proyectobiblioteca\\vista\\formulariolibros.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{4B08E2F6-4AD2-4822-BBA7-16ADFA1EFA95}|ProyectoBiblioteca\\ProyectoBiblioteca.csproj|solutionrelative:proyectobiblioteca\\vista\\formulariolibros.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{4B08E2F6-4AD2-4822-BBA7-16ADFA1EFA95}|ProyectoBiblioteca\\ProyectoBiblioteca.csproj|c:\\users\\edgar q\\desktop\\entregamaider26\\proyectgrupo\\proyectobiblioteca\\modelo\\libro\\listalibros.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{4B08E2F6-4AD2-4822-BBA7-16ADFA1EFA95}|ProyectoBiblioteca\\ProyectoBiblioteca.csproj|C:\\Users\\Edgar Q\\Desktop\\EntregaMaider26\\proyectGrupo\\proyectobiblioteca\\vista\\formulariolibros.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{4B08E2F6-4AD2-4822-BBA7-16ADFA1EFA95}|ProyectoBiblioteca\\ProyectoBiblioteca.csproj|solutionrelative:proyectobiblioteca\\vista\\formulariolibros.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4B08E2F6-4AD2-4822-BBA7-16ADFA1EFA95}|ProyectoBiblioteca\\ProyectoBiblioteca.csproj|C:\\Users\\Edgar Q\\Desktop\\EntregaMaider26\\proyectGrupo\\proyectobiblioteca\\modelo\\libro\\listalibros.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{4B08E2F6-4AD2-4822-BBA7-16ADFA1EFA95}|ProyectoBiblioteca\\ProyectoBiblioteca.csproj|solutionrelative:proyectobiblioteca\\modelo\\libro\\listalibros.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{36EF33B8-D7CA-40D7-8F57-627965174310}|ControlUsuarioProyecto\\ControlUsuarioProyecto\\ControlUsuarioProyecto.csproj|c:\\users\\edgar q\\desktop\\entregamaider26\\proyectgrupo\\controlusuarioproyecto\\controlusuarioproyecto\\usercontrol1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "AbsoluteMoniker": "D:0:0:{36EF33B8-D7CA-40D7-8F57-627965174310}|ControlUsuarioProyecto\\ControlUsuarioProyecto\\ControlUsuarioProyecto.csproj|C:\\Users\\Edgar Q\\Desktop\\EntregaMaider26\\proyectGrupo\\controlusuarioproyecto\\controlusuarioproyecto\\usercontrol1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{36EF33B8-D7CA-40D7-8F57-627965174310}|ControlUsuarioProyecto\\ControlUsuarioProyecto\\ControlUsuarioProyecto.csproj|solutionrelative:controlusuarioproyecto\\controlusuarioproyecto\\usercontrol1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{4B08E2F6-4AD2-4822-BBA7-16ADFA1EFA95}|ProyectoBiblioteca\\ProyectoBiblioteca.csproj|c:\\users\\edgar q\\desktop\\entregamaider26\\proyectgrupo\\proyectobiblioteca\\modelo\\libro\\libro.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{4B08E2F6-4AD2-4822-BBA7-16ADFA1EFA95}|ProyectoBiblioteca\\ProyectoBiblioteca.csproj|solutionrelative:proyectobiblioteca\\modelo\\libro\\libro.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{36EF33B8-D7CA-40D7-8F57-627965174310}|ControlUsuarioProyecto\\ControlUsuarioProyecto\\ControlUsuarioProyecto.csproj|C:\\Users\\Edgar Q\\Desktop\\EntregaMaider26\\proyectGrupo\\controlusuarioproyecto\\controlusuarioproyecto\\usercontrol1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{36EF33B8-D7CA-40D7-8F57-627965174310}|ControlUsuarioProyecto\\ControlUsuarioProyecto\\ControlUsuarioProyecto.csproj|solutionrelative:controlusuarioproyecto\\controlusuarioproyecto\\usercontrol1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{36EF33B8-D7CA-40D7-8F57-627965174310}|ControlUsuarioProyecto\\ControlUsuarioProyecto\\ControlUsuarioProyecto.csproj|c:\\users\\edgar q\\desktop\\entregamaider26\\proyectgrupo\\controlusuarioproyecto\\controlusuarioproyecto\\usercontrol1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{36EF33B8-D7CA-40D7-8F57-627965174310}|ControlUsuarioProyecto\\ControlUsuarioProyecto\\ControlUsuarioProyecto.csproj|solutionrelative:controlusuarioproyecto\\controlusuarioproyecto\\usercontrol1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{4B08E2F6-4AD2-4822-BBA7-16ADFA1EFA95}|ProyectoBiblioteca\\ProyectoBiblioteca.csproj|C:\\Users\\Edgar Q\\Desktop\\EntregaMaider26\\proyectGrupo\\proyectobiblioteca\\controlador\\controlador.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4B08E2F6-4AD2-4822-BBA7-16ADFA1EFA95}|ProyectoBiblioteca\\ProyectoBiblioteca.csproj|solutionrelative:proyectobiblioteca\\controlador\\controlador.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4B08E2F6-4AD2-4822-BBA7-16ADFA1EFA95}|ProyectoBiblioteca\\ProyectoBiblioteca.csproj|C:\\Users\\Edgar Q\\Desktop\\EntregaMaider26\\proyectGrupo\\proyectobiblioteca\\modelo\\libro\\libro.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4B08E2F6-4AD2-4822-BBA7-16ADFA1EFA95}|ProyectoBiblioteca\\ProyectoBiblioteca.csproj|solutionrelative:proyectobiblioteca\\modelo\\libro\\libro.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -50,7 +54,19 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 1,
+              "Title": "FormularioLibros.cs [Dise\u00F1o]",
+              "DocumentMoniker": "C:\\Users\\Edgar Q\\Desktop\\EntregaMaider26\\proyectGrupo\\ProyectoBiblioteca\\Vista\\FormularioLibros.cs",
+              "RelativeDocumentMoniker": "ProyectoBiblioteca\\Vista\\FormularioLibros.cs",
+              "ToolTip": "C:\\Users\\Edgar Q\\Desktop\\EntregaMaider26\\proyectGrupo\\ProyectoBiblioteca\\Vista\\FormularioLibros.cs [Dise\u00F1o]*",
+              "RelativeToolTip": "ProyectoBiblioteca\\Vista\\FormularioLibros.cs [Dise\u00F1o]*",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-31T17:24:09.309Z",
+              "EditorCaption": " [Dise\u00F1o]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
               "Title": "Libro.cs",
               "DocumentMoniker": "C:\\Users\\Edgar Q\\Desktop\\EntregaMaider26\\proyectGrupo\\ProyectoBiblioteca\\Modelo\\Libro\\Libro.cs",
               "RelativeDocumentMoniker": "ProyectoBiblioteca\\Modelo\\Libro\\Libro.cs",
@@ -58,8 +74,7 @@
               "RelativeToolTip": "ProyectoBiblioteca\\Modelo\\Libro\\Libro.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAWAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-01-31T14:48:55.159Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-01-31T14:48:55.159Z"
             },
             {
               "$type": "Document",
@@ -69,10 +84,9 @@
               "RelativeDocumentMoniker": "ProyectoBiblioteca\\Modelo\\Libro\\ListaLibros.cs",
               "ToolTip": "C:\\Users\\Edgar Q\\Desktop\\EntregaMaider26\\proyectGrupo\\ProyectoBiblioteca\\Modelo\\Libro\\ListaLibros.cs",
               "RelativeToolTip": "ProyectoBiblioteca\\Modelo\\Libro\\ListaLibros.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAABzAAAAAAAAAA==",
+              "ViewState": "AgIAAGMAAAAAAAAAAAAewHMAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-01-31T14:48:53.005Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-01-31T14:48:53.005Z"
             },
             {
               "$type": "Document",
@@ -83,12 +97,11 @@
               "ToolTip": "C:\\Users\\Edgar Q\\Desktop\\EntregaMaider26\\proyectGrupo\\ControlUsuarioProyecto\\ControlUsuarioProyecto\\UserControl1.cs [Dise\u00F1o]",
               "RelativeToolTip": "ControlUsuarioProyecto\\ControlUsuarioProyecto\\UserControl1.cs [Dise\u00F1o]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-01-31T13:59:36.725Z",
-              "EditorCaption": " [Dise\u00F1o]"
+              "WhenOpened": "2026-01-31T13:59:36.725Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 4,
               "Title": "UserControl1.cs",
               "DocumentMoniker": "C:\\Users\\Edgar Q\\Desktop\\EntregaMaider26\\proyectGrupo\\ControlUsuarioProyecto\\ControlUsuarioProyecto\\UserControl1.cs",
               "RelativeDocumentMoniker": "ControlUsuarioProyecto\\ControlUsuarioProyecto\\UserControl1.cs",
@@ -96,34 +109,32 @@
               "RelativeToolTip": "ControlUsuarioProyecto\\ControlUsuarioProyecto\\UserControl1.cs",
               "ViewState": "AgIAAAgAAAAAAAAAAAApwH0AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-01-31T13:24:07.845Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-01-31T13:24:07.845Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 0,
               "Title": "FormularioLibros.cs",
               "DocumentMoniker": "C:\\Users\\Edgar Q\\Desktop\\EntregaMaider26\\proyectGrupo\\ProyectoBiblioteca\\Vista\\FormularioLibros.cs",
               "RelativeDocumentMoniker": "ProyectoBiblioteca\\Vista\\FormularioLibros.cs",
               "ToolTip": "C:\\Users\\Edgar Q\\Desktop\\EntregaMaider26\\proyectGrupo\\ProyectoBiblioteca\\Vista\\FormularioLibros.cs*",
               "RelativeToolTip": "ProyectoBiblioteca\\Vista\\FormularioLibros.cs*",
-              "ViewState": "AgIAADMAAAAAAAAAAAAAADMAAAAMAAAAAAAAAA==",
+              "ViewState": "AgIAADoAAAAAAAAAAAAewEoAAAAHAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-01-31T11:56:38.356Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 5,
               "Title": "controlador.cs",
               "DocumentMoniker": "C:\\Users\\Edgar Q\\Desktop\\EntregaMaider26\\proyectGrupo\\ProyectoBiblioteca\\Controlador\\controlador.cs",
               "RelativeDocumentMoniker": "ProyectoBiblioteca\\Controlador\\controlador.cs",
-              "ToolTip": "C:\\Users\\Edgar Q\\Desktop\\EntregaMaider26\\proyectGrupo\\ProyectoBiblioteca\\Controlador\\controlador.cs*",
-              "RelativeToolTip": "ProyectoBiblioteca\\Controlador\\controlador.cs*",
-              "ViewState": "AgIAAE8AAAAAAAAAAAAuwFUAAAApAAAAAAAAAA==",
+              "ToolTip": "C:\\Users\\Edgar Q\\Desktop\\EntregaMaider26\\proyectGrupo\\ProyectoBiblioteca\\Controlador\\controlador.cs",
+              "RelativeToolTip": "ProyectoBiblioteca\\Controlador\\controlador.cs",
+              "ViewState": "AgIAAEkAAAAAAAAAAAAEwFwAAAAeAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-01-25T11:25:07.176Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-01-25T11:25:07.176Z"
             }
           ]
         }
