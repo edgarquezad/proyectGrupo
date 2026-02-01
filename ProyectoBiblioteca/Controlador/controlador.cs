@@ -78,9 +78,9 @@ namespace ProyectoBiblioteca.Controlador
 
         // Controlador de Libros 
 
-       public List<Libro> MostrarLibros() { 
-             return listaLibros.obtenerLibros();
-        }
+        /* public List<Libro> MostrarLibros() {   no consigo ponerlo a la vista sin comprometer mvc usaremos el DataTable
+               return listaLibros.obtenerLibros();
+          }*/
 
         public bool eliminarLibro(int id )
         {
@@ -92,6 +92,20 @@ namespace ProyectoBiblioteca.Controlador
         {
             return listaLibros.CargarTodo();
         }
+
+        public void InsertarLibro(string titulo, string escritor, int ano_edicion, string sinopsis, int disponible )
+        {
+            if (titulo.Trim().Length == 0)
+                throw new Exception( "Falta el titulo" + Environment.NewLine);
+            if (escritor.Trim().Length == 0)
+                throw new Exception("Falta el escritor" + Environment.NewLine);
+            if (ano_edicion <= 0 )
+                throw new Exception("Falta el año de edicion " + Environment.NewLine);
+     
+            listaLibros.AgregarLibros(titulo, escritor, ano_edicion, sinopsis, disponible);
+        }
+
+
 
 
 

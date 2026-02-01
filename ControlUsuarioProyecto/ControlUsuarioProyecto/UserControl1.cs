@@ -36,7 +36,6 @@ namespace ControlUsuarioProyecto
             get => txtNombre.Text;
             set => txtNombre.Text = value;
         }
-
         public string Apellido
         {
             get => txtApellido.Text;
@@ -58,6 +57,10 @@ namespace ControlUsuarioProyecto
             {
                 Id = id;
             }
+            public ClickarBotonSeleccionarEventArgs()
+            {
+
+            }
         }
         public event EventHandler<ClickarBotonSeleccionarEventArgs> eliminarUsuario;
 
@@ -70,14 +73,21 @@ namespace ControlUsuarioProyecto
 
         private void btAgregar_Click(object sender, EventArgs e)
         {
-            if (tipo == TipoEntidad.Usuario) {
+        
+            if (tipo == TipoEntidad.Usuario)
+            {
                 AgregarUsuario?.Invoke(this, new ClickarBotonSeleccionarEventArgs(id));
             }
-            else if (tipo == TipoEntidad.Libro) {
+            else if (tipo == TipoEntidad.Libro)
+            {
                 AgregarLibro?.Invoke(this, new ClickarBotonSeleccionarEventArgs(id));
             }
-       
+            else
+            {
+                MessageBox.Show("Tipo NO ES libro");
+            }
         }
+
         private void btEliminar_Click(object sender, EventArgs e)
         {
             if (tipo == TipoEntidad.Usuario)
@@ -93,40 +103,16 @@ namespace ControlUsuarioProyecto
 
         }
 
-        private void ckSeleccionar_CheckedChanged(object sender, EventArgs e)
-        {
-       
-
-              //  DialogResult resultado = MessageBox.Show("estas seguro de dar de baja al usuario "," dar de baja ", 
-              //    MessageBoxButtons.OKCancel, MessageBoxIcon.Question);
-                /*   if (resultado == DialogResult.Cancel)
-                   {
-                       ckSeleccionar.Checked = false;
-
-
-                   }
-                   if (resultado == DialogResult.OK)
-                   {
-                       txtApellido.Text = "";
-                       txtNombre.Text = "";
-                       ckSeleccionar.Checked = false;
-                   }
-
-
-               }
-           }*/
-             }
-
         private void btEliminar_Click_1(object sender, EventArgs e)
         {
-            if (ckSeleccionar.Checked) { 
+            if (ckSeleccionar.Checked)  
             btEliminar_Click(sender, e);
-            }
+            
         }
 
-        private void tableLayoutPanel2_Paint(object sender, PaintEventArgs e)
+        private void btAgregar_Click_1(object sender, EventArgs e)
         {
-
+            btAgregar_Click(sender, e);
         }
     }
 }

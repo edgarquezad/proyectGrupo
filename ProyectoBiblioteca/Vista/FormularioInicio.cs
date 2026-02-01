@@ -35,18 +35,12 @@ namespace ProyectoBiblioteca
 
             this.Show(); // se vuelve a mostrar el principal al cerrar el secundario 
 
-
-
-
-
-
-
         }
 
         private void menLibros_Click(object sender, EventArgs e)
         {
             FormularioLibros form = new FormularioLibros();
-            form.libroL = this.controladorPricipal;
+            form.controladorLibro = this.controladorPricipal;
             this.Hide();
             form.ShowDialog();
             this.Show();

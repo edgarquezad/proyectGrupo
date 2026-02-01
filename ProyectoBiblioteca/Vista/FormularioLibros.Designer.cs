@@ -133,18 +133,19 @@
             // 
             // tableLayoutPanelLibros
             // 
+            this.tableLayoutPanelLibros.AutoScroll = true;
             this.tableLayoutPanelLibros.ColumnCount = 1;
             this.tableLayoutPanelLibros.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
             this.tableLayoutPanelLibros.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 20F));
             this.tableLayoutPanelLibros.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tableLayoutPanelLibros.Location = new System.Drawing.Point(0, 72);
+            this.tableLayoutPanelLibros.Margin = new System.Windows.Forms.Padding(7);
             this.tableLayoutPanelLibros.Name = "tableLayoutPanelLibros";
             this.tableLayoutPanelLibros.RowCount = 1;
             this.tableLayoutPanelLibros.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanelLibros.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
+            this.tableLayoutPanelLibros.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 378F));
             this.tableLayoutPanelLibros.Size = new System.Drawing.Size(800, 378);
             this.tableLayoutPanelLibros.TabIndex = 4;
-            this.tableLayoutPanelLibros.Paint += new System.Windows.Forms.PaintEventHandler(this.tableLayoutPanelLibros_Paint);
             // 
             // FormularioLibros
             // 

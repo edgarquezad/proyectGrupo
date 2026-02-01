@@ -76,7 +76,6 @@
             this.ckSeleccionar.Size = new System.Drawing.Size(18, 68);
             this.ckSeleccionar.TabIndex = 0;
             this.ckSeleccionar.UseVisualStyleBackColor = true;
-            this.ckSeleccionar.CheckedChanged += new System.EventHandler(this.ckSeleccionar_CheckedChanged);
             // 
             // btAgregar
             // 
@@ -87,6 +86,7 @@
             this.btAgregar.Size = new System.Drawing.Size(54, 68);
             this.btAgregar.TabIndex = 3;
             this.btAgregar.UseVisualStyleBackColor = true;
+            this.btAgregar.Click += new System.EventHandler(this.btAgregar_Click_1);
             // 
             // btEliminar
             // 
@@ -138,7 +138,6 @@
             this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
             this.tableLayoutPanel2.Size = new System.Drawing.Size(230, 68);
             this.tableLayoutPanel2.TabIndex = 6;
-            this.tableLayoutPanel2.Paint += new System.Windows.Forms.PaintEventHandler(this.tableLayoutPanel2_Paint);
             // 
             // txtApellido
             // 

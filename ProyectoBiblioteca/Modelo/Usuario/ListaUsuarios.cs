@@ -32,15 +32,11 @@ namespace ProyectoBiblioteca.Modelo
         {
             List<Usuario> resultado = new List<Usuario>();
             SQLiteCommand cmd;
-
-
             {
-
-                if (id > 0)
+               if (id > 0)
                 {
-                    string sql = @"SELECT ID, Nombre, Apellido_1, Apellido_2, Telefono FROM Usuarios WHERE ID = @id";
+                 string sql = @"SELECT ID, Nombre, Apellido_1, Apellido_2, Telefono FROM Usuarios WHERE ID = @id";
                     cmd = new SQLiteCommand(sql);
-
                     cmd.Parameters.AddWithValue("@id", id);
                 }
                 else
@@ -49,8 +45,6 @@ namespace ProyectoBiblioteca.Modelo
                     cmd= new SQLiteCommand(sql);
                     cmd.Parameters.AddWithValue("@texto", "%" + texto + "%"); // para que sirven los %% no lo veo
                 }
-
-
 
                 using (SQLiteDataReader dr = Conexion.GetDataReader(ruta, cmd))
                 {

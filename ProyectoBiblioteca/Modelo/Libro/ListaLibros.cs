@@ -28,8 +28,7 @@ namespace ProyectoBiblioteca.Modelo.Libro
             cmd.Parameters.AddWithValue("@Disponible", Disponible);
            // Conexion.Ejecuta(ruta, cmd);
            
-            Conexion.Ejecuta(Properties.Settings.Default.conexion, cmd);
-
+            Conexion.Ejecuta(ruta, cmd);
 
         }
 
