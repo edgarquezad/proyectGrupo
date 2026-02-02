@@ -108,6 +108,7 @@
             this.menUsuarios.Size = new System.Drawing.Size(108, 48);
             this.menUsuarios.Text = "Usuarios";
             this.menUsuarios.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.menUsuarios.Click += new System.EventHandler(this.menUsuarios_Click);
             // 
             // menLibros
             // 
@@ -120,6 +121,7 @@
             this.menLibros.Padding = new System.Windows.Forms.Padding(5);
             this.menLibros.Size = new System.Drawing.Size(94, 38);
             this.menLibros.Text = "Libros ";
+            this.menLibros.Click += new System.EventHandler(this.menLibros_Click);
             // 
             // menPrestamos
             // 
@@ -130,6 +132,7 @@
             this.menPrestamos.Name = "menPrestamos";
             this.menPrestamos.Size = new System.Drawing.Size(121, 38);
             this.menPrestamos.Text = "Prestamos";
+            this.menPrestamos.Click += new System.EventHandler(this.menPrestamos_Click);
             // 
             // tableLayoutPanelLibros
             // 

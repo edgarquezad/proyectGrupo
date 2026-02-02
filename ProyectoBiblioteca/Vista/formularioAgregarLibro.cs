@@ -60,5 +60,10 @@ namespace ProyectoBiblioteca.Vista
         {
          
         }
+
+        private void btCancelar_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
     }
 }

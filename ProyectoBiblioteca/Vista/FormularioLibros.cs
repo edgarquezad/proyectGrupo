@@ -76,6 +76,20 @@ namespace ProyectoBiblioteca
             MessageBox.Show("libro eliminado correctamente");
 
         }
-    
+
+        private void menPrestamos_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void menLibros_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void menUsuarios_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
     }
 }
