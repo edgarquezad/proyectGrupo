@@ -27,7 +27,7 @@
       "RelativeMoniker": "D:0:0:{4B08E2F6-4AD2-4822-BBA7-16ADFA1EFA95}|ProyectoBiblioteca\\ProyectoBiblioteca.csproj|solutionrelative:proyectobiblioteca\\vista\\formularioagregarlibro.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{4B08E2F6-4AD2-4822-BBA7-16ADFA1EFA95}|ProyectoBiblioteca\\ProyectoBiblioteca.csproj|c:\\users\\edgar q\\desktop\\entregamaider26\\proyectgrupo\\proyectobiblioteca\\vista\\formulariolibros.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "AbsoluteMoniker": "D:0:0:{4B08E2F6-4AD2-4822-BBA7-16ADFA1EFA95}|ProyectoBiblioteca\\ProyectoBiblioteca.csproj|C:\\Users\\Edgar Q\\Desktop\\EntregaMaider26\\proyectGrupo\\proyectobiblioteca\\vista\\formulariolibros.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{4B08E2F6-4AD2-4822-BBA7-16ADFA1EFA95}|ProyectoBiblioteca\\ProyectoBiblioteca.csproj|solutionrelative:proyectobiblioteca\\vista\\formulariolibros.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
@@ -78,8 +78,7 @@
               "RelativeToolTip": "ProyectoBiblioteca\\Vista\\formularioAgregarLibro.cs",
               "ViewState": "AgIAADMAAAAAAAAAAIAzwEUAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-01-31T21:39:15.071Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-01-31T21:39:15.071Z"
             },
             {
               "$type": "Document",
@@ -91,8 +90,7 @@
               "RelativeToolTip": "ProyectoBiblioteca\\Vista\\FormularioInicio.cs",
               "ViewState": "AgIAACkAAAAAAAAAAAAewDQAAAAuAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-01-31T21:38:50.181Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-01-31T21:38:50.181Z"
             },
             {
               "$type": "Document",
@@ -104,8 +102,7 @@
               "RelativeToolTip": "ProyectoBiblioteca\\Vista\\FormularioLibros.cs",
               "ViewState": "AgIAAEgAAAAAAAAAAAAEwDEAAAAlAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-01-31T21:37:01.049Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-01-31T21:37:01.049Z"
             },
             {
               "$type": "Document",
@@ -117,8 +114,7 @@
               "RelativeToolTip": "ProyectoBiblioteca\\Modelo\\Libro\\ListaLibros.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAB0AAAALAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-02-01T15:52:48.625Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-02-01T15:52:48.625Z"
             },
             {
               "$type": "Document",
@@ -129,8 +125,7 @@
               "ToolTip": "C:\\Users\\Edgar Q\\Desktop\\EntregaMaider26\\proyectGrupo\\ProyectoBiblioteca\\Vista\\FormularioLibros.cs [Dise\u00F1o]",
               "RelativeToolTip": "ProyectoBiblioteca\\Vista\\FormularioLibros.cs [Dise\u00F1o]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-02-01T16:35:27.078Z",
-              "EditorCaption": " [Dise\u00F1o]"
+              "WhenOpened": "2026-02-01T16:35:27.078Z"
             },
             {
               "$type": "Document",
@@ -141,8 +136,7 @@
               "ToolTip": "C:\\Users\\Edgar Q\\Desktop\\EntregaMaider26\\proyectGrupo\\ProyectoBiblioteca\\Vista\\formularioAgregarLibro.cs [Dise\u00F1o]",
               "RelativeToolTip": "ProyectoBiblioteca\\Vista\\formularioAgregarLibro.cs [Dise\u00F1o]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-02-02T17:48:00.82Z",
-              "EditorCaption": " [Dise\u00F1o]"
+              "WhenOpened": "2026-02-02T17:48:00.82Z"
             },
             {
               "$type": "Document",
@@ -153,8 +147,7 @@
               "ToolTip": "C:\\Users\\Edgar Q\\Desktop\\EntregaMaider26\\proyectGrupo\\ProyectoBiblioteca\\Vista\\FormularioInicio.cs [Dise\u00F1o]",
               "RelativeToolTip": "ProyectoBiblioteca\\Vista\\FormularioInicio.cs [Dise\u00F1o]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-02-02T17:48:54.004Z",
-              "EditorCaption": " [Dise\u00F1o]"
+              "WhenOpened": "2026-02-02T17:48:54.004Z"
             }
           ]
         }
