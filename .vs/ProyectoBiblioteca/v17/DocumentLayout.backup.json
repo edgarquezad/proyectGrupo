@@ -3,32 +3,36 @@
   "WorkspaceRootPath": "C:\\Users\\Edgar Q\\Desktop\\EntregaMaider26\\proyectGrupo\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{4B08E2F6-4AD2-4822-BBA7-16ADFA1EFA95}|ProyectoBiblioteca\\ProyectoBiblioteca.csproj|c:\\users\\edgar q\\desktop\\entregamaider26\\proyectgrupo\\proyectobiblioteca\\vista\\formulariousuario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{4B08E2F6-4AD2-4822-BBA7-16ADFA1EFA95}|ProyectoBiblioteca\\ProyectoBiblioteca.csproj|solutionrelative:proyectobiblioteca\\vista\\formulariousuario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4B08E2F6-4AD2-4822-BBA7-16ADFA1EFA95}|ProyectoBiblioteca\\ProyectoBiblioteca.csproj|C:\\Users\\Edgar Q\\Desktop\\EntregaMaider26\\proyectGrupo\\proyectobiblioteca\\vista\\formularioinicio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4B08E2F6-4AD2-4822-BBA7-16ADFA1EFA95}|ProyectoBiblioteca\\ProyectoBiblioteca.csproj|solutionrelative:proyectobiblioteca\\vista\\formularioinicio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4B08E2F6-4AD2-4822-BBA7-16ADFA1EFA95}|ProyectoBiblioteca\\ProyectoBiblioteca.csproj|C:\\Users\\Edgar Q\\Desktop\\EntregaMaider26\\proyectGrupo\\proyectobiblioteca\\vista\\formularioinicio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{4B08E2F6-4AD2-4822-BBA7-16ADFA1EFA95}|ProyectoBiblioteca\\ProyectoBiblioteca.csproj|solutionrelative:proyectobiblioteca\\vista\\formularioinicio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4B08E2F6-4AD2-4822-BBA7-16ADFA1EFA95}|ProyectoBiblioteca\\ProyectoBiblioteca.csproj|C:\\Users\\Edgar Q\\Desktop\\EntregaMaider26\\proyectGrupo\\proyectobiblioteca\\vista\\formularioagregarlibro.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4B08E2F6-4AD2-4822-BBA7-16ADFA1EFA95}|ProyectoBiblioteca\\ProyectoBiblioteca.csproj|solutionrelative:proyectobiblioteca\\vista\\formularioagregarlibro.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4B08E2F6-4AD2-4822-BBA7-16ADFA1EFA95}|ProyectoBiblioteca\\ProyectoBiblioteca.csproj|C:\\Users\\Edgar Q\\Desktop\\EntregaMaider26\\proyectGrupo\\proyectobiblioteca\\vista\\formulariolibros.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4B08E2F6-4AD2-4822-BBA7-16ADFA1EFA95}|ProyectoBiblioteca\\ProyectoBiblioteca.csproj|solutionrelative:proyectobiblioteca\\vista\\formulariolibros.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4B08E2F6-4AD2-4822-BBA7-16ADFA1EFA95}|ProyectoBiblioteca\\ProyectoBiblioteca.csproj|C:\\Users\\Edgar Q\\Desktop\\EntregaMaider26\\proyectGrupo\\proyectobiblioteca\\vista\\formularioagregarlibro.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{4B08E2F6-4AD2-4822-BBA7-16ADFA1EFA95}|ProyectoBiblioteca\\ProyectoBiblioteca.csproj|solutionrelative:proyectobiblioteca\\vista\\formularioagregarlibro.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{4B08E2F6-4AD2-4822-BBA7-16ADFA1EFA95}|ProyectoBiblioteca\\ProyectoBiblioteca.csproj|c:\\users\\edgar q\\desktop\\entregamaider26\\proyectgrupo\\proyectobiblioteca\\vista\\formulariolibros.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{4B08E2F6-4AD2-4822-BBA7-16ADFA1EFA95}|ProyectoBiblioteca\\ProyectoBiblioteca.csproj|solutionrelative:proyectobiblioteca\\vista\\formulariolibros.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{4B08E2F6-4AD2-4822-BBA7-16ADFA1EFA95}|ProyectoBiblioteca\\ProyectoBiblioteca.csproj|c:\\users\\edgar q\\desktop\\entregamaider26\\proyectgrupo\\proyectobiblioteca\\vista\\formulariolibros.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{4B08E2F6-4AD2-4822-BBA7-16ADFA1EFA95}|ProyectoBiblioteca\\ProyectoBiblioteca.csproj|solutionrelative:proyectobiblioteca\\vista\\formulariolibros.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{4B08E2F6-4AD2-4822-BBA7-16ADFA1EFA95}|ProyectoBiblioteca\\ProyectoBiblioteca.csproj|c:\\users\\edgar q\\desktop\\entregamaider26\\proyectgrupo\\proyectobiblioteca\\vista\\formularioinicio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{4B08E2F6-4AD2-4822-BBA7-16ADFA1EFA95}|ProyectoBiblioteca\\ProyectoBiblioteca.csproj|solutionrelative:proyectobiblioteca\\vista\\formularioinicio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{4B08E2F6-4AD2-4822-BBA7-16ADFA1EFA95}|ProyectoBiblioteca\\ProyectoBiblioteca.csproj|c:\\users\\edgar q\\desktop\\entregamaider26\\proyectgrupo\\proyectobiblioteca\\modelo\\libro\\listalibros.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{4B08E2F6-4AD2-4822-BBA7-16ADFA1EFA95}|ProyectoBiblioteca\\ProyectoBiblioteca.csproj|C:\\Users\\Edgar Q\\Desktop\\EntregaMaider26\\proyectGrupo\\proyectobiblioteca\\modelo\\libro\\listalibros.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{4B08E2F6-4AD2-4822-BBA7-16ADFA1EFA95}|ProyectoBiblioteca\\ProyectoBiblioteca.csproj|solutionrelative:proyectobiblioteca\\modelo\\libro\\listalibros.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{4B08E2F6-4AD2-4822-BBA7-16ADFA1EFA95}|ProyectoBiblioteca\\ProyectoBiblioteca.csproj|c:\\users\\edgar q\\desktop\\entregamaider26\\proyectgrupo\\proyectobiblioteca\\vista\\formularioinicio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{4B08E2F6-4AD2-4822-BBA7-16ADFA1EFA95}|ProyectoBiblioteca\\ProyectoBiblioteca.csproj|solutionrelative:proyectobiblioteca\\vista\\formularioinicio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{4B08E2F6-4AD2-4822-BBA7-16ADFA1EFA95}|ProyectoBiblioteca\\ProyectoBiblioteca.csproj|c:\\users\\edgar q\\desktop\\entregamaider26\\proyectgrupo\\proyectobiblioteca\\vista\\formularioagregarlibro.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{4B08E2F6-4AD2-4822-BBA7-16ADFA1EFA95}|ProyectoBiblioteca\\ProyectoBiblioteca.csproj|solutionrelative:proyectobiblioteca\\vista\\formularioagregarlibro.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{4B08E2F6-4AD2-4822-BBA7-16ADFA1EFA95}|ProyectoBiblioteca\\ProyectoBiblioteca.csproj|c:\\users\\edgar q\\desktop\\entregamaider26\\proyectgrupo\\proyectobiblioteca\\vista\\formularioagregarlibro.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{4B08E2F6-4AD2-4822-BBA7-16ADFA1EFA95}|ProyectoBiblioteca\\ProyectoBiblioteca.csproj|solutionrelative:proyectobiblioteca\\vista\\formularioagregarlibro.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -38,7 +42,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 9,
+          "SelectedChildIndex": 3,
           "Children": [
             {
               "$type": "Bookmark",
@@ -54,14 +58,78 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "FormularioInicio.cs [Dise\u00F1o]",
+              "DocumentIndex": 0,
+              "Title": "FormularioUsuario.cs [Dise\u00F1o]",
+              "DocumentMoniker": "C:\\Users\\Edgar Q\\Desktop\\EntregaMaider26\\proyectGrupo\\ProyectoBiblioteca\\Vista\\FormularioUsuario.cs",
+              "RelativeDocumentMoniker": "ProyectoBiblioteca\\Vista\\FormularioUsuario.cs",
+              "ToolTip": "C:\\Users\\Edgar Q\\Desktop\\EntregaMaider26\\proyectGrupo\\ProyectoBiblioteca\\Vista\\FormularioUsuario.cs [Dise\u00F1o]",
+              "RelativeToolTip": "ProyectoBiblioteca\\Vista\\FormularioUsuario.cs [Dise\u00F1o]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-02T18:35:22.369Z",
+              "EditorCaption": " [Dise\u00F1o]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "formularioAgregarLibro.cs",
+              "DocumentMoniker": "C:\\Users\\Edgar Q\\Desktop\\EntregaMaider26\\proyectGrupo\\ProyectoBiblioteca\\Vista\\formularioAgregarLibro.cs",
+              "RelativeDocumentMoniker": "ProyectoBiblioteca\\Vista\\formularioAgregarLibro.cs",
+              "ToolTip": "C:\\Users\\Edgar Q\\Desktop\\EntregaMaider26\\proyectGrupo\\ProyectoBiblioteca\\Vista\\formularioAgregarLibro.cs",
+              "RelativeToolTip": "ProyectoBiblioteca\\Vista\\formularioAgregarLibro.cs",
+              "ViewState": "AgIAADMAAAAAAAAAAIAzwEUAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-31T21:39:15.071Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "FormularioInicio.cs",
               "DocumentMoniker": "C:\\Users\\Edgar Q\\Desktop\\EntregaMaider26\\proyectGrupo\\ProyectoBiblioteca\\Vista\\FormularioInicio.cs",
               "RelativeDocumentMoniker": "ProyectoBiblioteca\\Vista\\FormularioInicio.cs",
-              "ToolTip": "C:\\Users\\Edgar Q\\Desktop\\EntregaMaider26\\proyectGrupo\\ProyectoBiblioteca\\Vista\\FormularioInicio.cs [Dise\u00F1o]",
-              "RelativeToolTip": "ProyectoBiblioteca\\Vista\\FormularioInicio.cs [Dise\u00F1o]",
+              "ToolTip": "C:\\Users\\Edgar Q\\Desktop\\EntregaMaider26\\proyectGrupo\\ProyectoBiblioteca\\Vista\\FormularioInicio.cs",
+              "RelativeToolTip": "ProyectoBiblioteca\\Vista\\FormularioInicio.cs",
+              "ViewState": "AgIAACkAAAAAAAAAAAAewDQAAAAuAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-02-02T17:48:54.004Z",
+              "WhenOpened": "2026-01-31T21:38:50.181Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "FormularioLibros.cs",
+              "DocumentMoniker": "C:\\Users\\Edgar Q\\Desktop\\EntregaMaider26\\proyectGrupo\\ProyectoBiblioteca\\Vista\\FormularioLibros.cs",
+              "RelativeDocumentMoniker": "ProyectoBiblioteca\\Vista\\FormularioLibros.cs",
+              "ToolTip": "C:\\Users\\Edgar Q\\Desktop\\EntregaMaider26\\proyectGrupo\\ProyectoBiblioteca\\Vista\\FormularioLibros.cs",
+              "RelativeToolTip": "ProyectoBiblioteca\\Vista\\FormularioLibros.cs",
+              "ViewState": "AgIAAEgAAAAAAAAAAAAEwDEAAAAlAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-31T21:37:01.049Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "ListaLibros.cs",
+              "DocumentMoniker": "C:\\Users\\Edgar Q\\Desktop\\EntregaMaider26\\proyectGrupo\\ProyectoBiblioteca\\Modelo\\Libro\\ListaLibros.cs",
+              "RelativeDocumentMoniker": "ProyectoBiblioteca\\Modelo\\Libro\\ListaLibros.cs",
+              "ToolTip": "C:\\Users\\Edgar Q\\Desktop\\EntregaMaider26\\proyectGrupo\\ProyectoBiblioteca\\Modelo\\Libro\\ListaLibros.cs",
+              "RelativeToolTip": "ProyectoBiblioteca\\Modelo\\Libro\\ListaLibros.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAB0AAAALAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-01T15:52:48.625Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "FormularioLibros.cs [Dise\u00F1o]",
+              "DocumentMoniker": "C:\\Users\\Edgar Q\\Desktop\\EntregaMaider26\\proyectGrupo\\ProyectoBiblioteca\\Vista\\FormularioLibros.cs",
+              "RelativeDocumentMoniker": "ProyectoBiblioteca\\Vista\\FormularioLibros.cs",
+              "ToolTip": "C:\\Users\\Edgar Q\\Desktop\\EntregaMaider26\\proyectGrupo\\ProyectoBiblioteca\\Vista\\FormularioLibros.cs [Dise\u00F1o]",
+              "RelativeToolTip": "ProyectoBiblioteca\\Vista\\FormularioLibros.cs [Dise\u00F1o]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-01T16:35:27.078Z",
               "EditorCaption": " [Dise\u00F1o]"
             },
             {
@@ -78,66 +146,14 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "formularioAgregarLibro.cs",
-              "DocumentMoniker": "C:\\Users\\Edgar Q\\Desktop\\EntregaMaider26\\proyectGrupo\\ProyectoBiblioteca\\Vista\\formularioAgregarLibro.cs",
-              "RelativeDocumentMoniker": "ProyectoBiblioteca\\Vista\\formularioAgregarLibro.cs",
-              "ToolTip": "C:\\Users\\Edgar Q\\Desktop\\EntregaMaider26\\proyectGrupo\\ProyectoBiblioteca\\Vista\\formularioAgregarLibro.cs",
-              "RelativeToolTip": "ProyectoBiblioteca\\Vista\\formularioAgregarLibro.cs",
-              "ViewState": "AgIAADMAAAAAAAAAAIAzwEUAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-01-31T21:39:15.071Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "FormularioInicio.cs",
+              "Title": "FormularioInicio.cs [Dise\u00F1o]",
               "DocumentMoniker": "C:\\Users\\Edgar Q\\Desktop\\EntregaMaider26\\proyectGrupo\\ProyectoBiblioteca\\Vista\\FormularioInicio.cs",
               "RelativeDocumentMoniker": "ProyectoBiblioteca\\Vista\\FormularioInicio.cs",
-              "ToolTip": "C:\\Users\\Edgar Q\\Desktop\\EntregaMaider26\\proyectGrupo\\ProyectoBiblioteca\\Vista\\FormularioInicio.cs",
-              "RelativeToolTip": "ProyectoBiblioteca\\Vista\\FormularioInicio.cs",
-              "ViewState": "AgIAABgAAAAAAAAAAIAxwBQAAAAJAAAAAAAAAA==",
+              "ToolTip": "C:\\Users\\Edgar Q\\Desktop\\EntregaMaider26\\proyectGrupo\\ProyectoBiblioteca\\Vista\\FormularioInicio.cs [Dise\u00F1o]",
+              "RelativeToolTip": "ProyectoBiblioteca\\Vista\\FormularioInicio.cs [Dise\u00F1o]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-01-31T21:38:50.181Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "FormularioLibros.cs",
-              "DocumentMoniker": "C:\\Users\\Edgar Q\\Desktop\\EntregaMaider26\\proyectGrupo\\ProyectoBiblioteca\\Vista\\FormularioLibros.cs",
-              "RelativeDocumentMoniker": "ProyectoBiblioteca\\Vista\\FormularioLibros.cs",
-              "ToolTip": "C:\\Users\\Edgar Q\\Desktop\\EntregaMaider26\\proyectGrupo\\ProyectoBiblioteca\\Vista\\FormularioLibros.cs",
-              "RelativeToolTip": "ProyectoBiblioteca\\Vista\\FormularioLibros.cs",
-              "ViewState": "AgIAAEoAAAAAAAAAAAAUwFsAAAAZAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-01-31T21:37:01.049Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "ListaLibros.cs",
-              "DocumentMoniker": "C:\\Users\\Edgar Q\\Desktop\\EntregaMaider26\\proyectGrupo\\ProyectoBiblioteca\\Modelo\\Libro\\ListaLibros.cs",
-              "RelativeDocumentMoniker": "ProyectoBiblioteca\\Modelo\\Libro\\ListaLibros.cs",
-              "ToolTip": "C:\\Users\\Edgar Q\\Desktop\\EntregaMaider26\\proyectGrupo\\ProyectoBiblioteca\\Modelo\\Libro\\ListaLibros.cs",
-              "RelativeToolTip": "ProyectoBiblioteca\\Modelo\\Libro\\ListaLibros.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAB0AAAALAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-02-01T15:52:48.625Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "FormularioLibros.cs [Dise\u00F1o]",
-              "DocumentMoniker": "C:\\Users\\Edgar Q\\Desktop\\EntregaMaider26\\proyectGrupo\\ProyectoBiblioteca\\Vista\\FormularioLibros.cs",
-              "RelativeDocumentMoniker": "ProyectoBiblioteca\\Vista\\FormularioLibros.cs",
-              "ToolTip": "C:\\Users\\Edgar Q\\Desktop\\EntregaMaider26\\proyectGrupo\\ProyectoBiblioteca\\Vista\\FormularioLibros.cs [Dise\u00F1o]",
-              "RelativeToolTip": "ProyectoBiblioteca\\Vista\\FormularioLibros.cs [Dise\u00F1o]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-02-01T16:35:27.078Z",
+              "WhenOpened": "2026-02-02T17:48:54.004Z",
               "EditorCaption": " [Dise\u00F1o]"
             }
           ]

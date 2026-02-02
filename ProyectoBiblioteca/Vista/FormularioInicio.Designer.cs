@@ -36,7 +36,9 @@
             this.menLibros = new System.Windows.Forms.ToolStripMenuItem();
             this.menPrestamos = new System.Windows.Forms.ToolStripMenuItem();
             this.contextMenuStrip1 = new System.Windows.Forms.ContextMenuStrip(this.components);
+            this.fileSystemWatcher1 = new System.IO.FileSystemWatcher();
             this.msPrincipal.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.fileSystemWatcher1)).BeginInit();
             this.SuspendLayout();
             // 
             // msPrincipal
@@ -102,12 +104,18 @@
             this.menPrestamos.Name = "menPrestamos";
             this.menPrestamos.Size = new System.Drawing.Size(115, 38);
             this.menPrestamos.Text = "Prestamos";
+            this.menPrestamos.Click += new System.EventHandler(this.menPrestamos_Click);
             // 
             // contextMenuStrip1
             // 
             this.contextMenuStrip1.ImageScalingSize = new System.Drawing.Size(20, 20);
             this.contextMenuStrip1.Name = "contextMenuStrip1";
             this.contextMenuStrip1.Size = new System.Drawing.Size(61, 4);
+            // 
+            // fileSystemWatcher1
+            // 
+            this.fileSystemWatcher1.EnableRaisingEvents = true;
+            this.fileSystemWatcher1.SynchronizingObject = this;
             // 
             // formularioPrincipal
             // 
@@ -118,11 +126,13 @@
             this.Controls.Add(this.msPrincipal);
             this.ForeColor = System.Drawing.SystemColors.ButtonFace;
             this.ImeMode = System.Windows.Forms.ImeMode.On;
+            this.IsMdiContainer = true;
             this.Name = "formularioPrincipal";
             this.Text = "Pagina Inicio";
             this.Load += new System.EventHandler(this.formularioPrincipal_Load);
             this.msPrincipal.ResumeLayout(false);
             this.msPrincipal.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.fileSystemWatcher1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -137,6 +147,7 @@
         private System.Windows.Forms.ToolStripMenuItem menUsuarios;
         private System.Windows.Forms.ToolStripMenuItem menLibros;
         private System.Windows.Forms.ToolStripMenuItem menPrestamos;
+        private System.IO.FileSystemWatcher fileSystemWatcher1;
     }
 }
 

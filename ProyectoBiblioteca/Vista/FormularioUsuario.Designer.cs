@@ -28,15 +28,6 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.msPrincipal = new System.Windows.Forms.MenuStrip();
-            this.smiInsertar = new System.Windows.Forms.ToolStripMenuItem();
-            this.smiInsertarEmpleado = new System.Windows.Forms.ToolStripMenuItem();
-            this.nombreToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.apellidoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.toolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
-            this.menUsuarios = new System.Windows.Forms.ToolStripMenuItem();
-            this.menLibros = new System.Windows.Forms.ToolStripMenuItem();
-            this.menPrestamos = new System.Windows.Forms.ToolStripMenuItem();
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
             this.tableLayoutPanel2 = new System.Windows.Forms.TableLayoutPanel();
             this.label1 = new System.Windows.Forms.Label();
@@ -59,7 +50,6 @@
             this.tableLayoutPanel6 = new System.Windows.Forms.TableLayoutPanel();
             this.btGuardar = new System.Windows.Forms.Button();
             this.btCerrar = new System.Windows.Forms.Button();
-            this.msPrincipal.SuspendLayout();
             this.tableLayoutPanel1.SuspendLayout();
             this.tableLayoutPanel2.SuspendLayout();
             this.tableLayoutPanel3.SuspendLayout();
@@ -67,96 +57,6 @@
             this.tableLayoutPanel5.SuspendLayout();
             this.tableLayoutPanel6.SuspendLayout();
             this.SuspendLayout();
-            // 
-            // msPrincipal
-            // 
-            this.msPrincipal.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.msPrincipal.ImageScalingSize = new System.Drawing.Size(24, 24);
-            this.msPrincipal.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.smiInsertar,
-            this.toolStripMenuItem1,
-            this.menUsuarios,
-            this.menLibros,
-            this.menPrestamos});
-            this.msPrincipal.Location = new System.Drawing.Point(0, 0);
-            this.msPrincipal.Name = "msPrincipal";
-            this.msPrincipal.Padding = new System.Windows.Forms.Padding(5, 2, 0, 2);
-            this.msPrincipal.RenderMode = System.Windows.Forms.ToolStripRenderMode.System;
-            this.msPrincipal.Size = new System.Drawing.Size(800, 72);
-            this.msPrincipal.TabIndex = 2;
-            this.msPrincipal.Text = "MenuStrip1";
-            // 
-            // smiInsertar
-            // 
-            this.smiInsertar.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.smiInsertarEmpleado,
-            this.nombreToolStripMenuItem,
-            this.apellidoToolStripMenuItem});
-            this.smiInsertar.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.smiInsertar.Image = global::ProyectoBiblioteca.Properties.Resources.Person_Male_Skin_Type_3;
-            this.smiInsertar.ImageTransparentColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.smiInsertar.Margin = new System.Windows.Forms.Padding(15, 0, 0, 0);
-            this.smiInsertar.Name = "smiInsertar";
-            this.smiInsertar.Size = new System.Drawing.Size(240, 68);
-            this.smiInsertar.Text = "Ayuntamiento Vitoria Gasteiz";
-            this.smiInsertar.Click += new System.EventHandler(this.smiInsertar_Click);
-            // 
-            // smiInsertarEmpleado
-            // 
-            this.smiInsertarEmpleado.Name = "smiInsertarEmpleado";
-            this.smiInsertarEmpleado.Size = new System.Drawing.Size(148, 26);
-            this.smiInsertarEmpleado.Text = "Usuarios";
-            // 
-            // nombreToolStripMenuItem
-            // 
-            this.nombreToolStripMenuItem.Name = "nombreToolStripMenuItem";
-            this.nombreToolStripMenuItem.Size = new System.Drawing.Size(148, 26);
-            this.nombreToolStripMenuItem.Text = "nombre";
-            // 
-            // apellidoToolStripMenuItem
-            // 
-            this.apellidoToolStripMenuItem.Name = "apellidoToolStripMenuItem";
-            this.apellidoToolStripMenuItem.Size = new System.Drawing.Size(148, 26);
-            this.apellidoToolStripMenuItem.Text = "apellido";
-            // 
-            // toolStripMenuItem1
-            // 
-            this.toolStripMenuItem1.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold);
-            this.toolStripMenuItem1.Name = "toolStripMenuItem1";
-            this.toolStripMenuItem1.Size = new System.Drawing.Size(14, 68);
-            // 
-            // menUsuarios
-            // 
-            this.menUsuarios.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold);
-            this.menUsuarios.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.menUsuarios.Image = global::ProyectoBiblioteca.Properties.Resources.Add_User_Male1;
-            this.menUsuarios.Margin = new System.Windows.Forms.Padding(45, 10, 10, 10);
-            this.menUsuarios.Name = "menUsuarios";
-            this.menUsuarios.Size = new System.Drawing.Size(108, 48);
-            this.menUsuarios.Text = "Usuarios";
-            this.menUsuarios.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            // 
-            // menLibros
-            // 
-            this.menLibros.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold);
-            this.menLibros.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.menLibros.Image = global::ProyectoBiblioteca.Properties.Resources.Add_Book;
-            this.menLibros.ImageTransparentColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.menLibros.Margin = new System.Windows.Forms.Padding(15);
-            this.menLibros.Name = "menLibros";
-            this.menLibros.Padding = new System.Windows.Forms.Padding(5);
-            this.menLibros.Size = new System.Drawing.Size(94, 38);
-            this.menLibros.Text = "Libros ";
-            // 
-            // menPrestamos
-            // 
-            this.menPrestamos.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold);
-            this.menPrestamos.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.menPrestamos.Image = global::ProyectoBiblioteca.Properties.Resources.Books;
-            this.menPrestamos.Margin = new System.Windows.Forms.Padding(15);
-            this.menPrestamos.Name = "menPrestamos";
-            this.menPrestamos.Size = new System.Drawing.Size(121, 38);
-            this.menPrestamos.Text = "Prestamos";
             // 
             // tableLayoutPanel1
             // 
@@ -168,7 +68,7 @@
             this.tableLayoutPanel1.Controls.Add(this.tableLayoutPanel5, 0, 3);
             this.tableLayoutPanel1.Controls.Add(this.tableLayoutPanel6, 0, 4);
             this.tableLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tableLayoutPanel1.Location = new System.Drawing.Point(0, 72);
+            this.tableLayoutPanel1.Location = new System.Drawing.Point(0, 0);
             this.tableLayoutPanel1.Name = "tableLayoutPanel1";
             this.tableLayoutPanel1.RowCount = 5;
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 12.04253F));
@@ -176,7 +76,7 @@
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 16.51549F));
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 16.51549F));
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 33.03098F));
-            this.tableLayoutPanel1.Size = new System.Drawing.Size(800, 378);
+            this.tableLayoutPanel1.Size = new System.Drawing.Size(800, 450);
             this.tableLayoutPanel1.TabIndex = 3;
             // 
             // tableLayoutPanel2
@@ -194,7 +94,7 @@
             this.tableLayoutPanel2.RowCount = 1;
             this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle());
             this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 55F));
-            this.tableLayoutPanel2.Size = new System.Drawing.Size(794, 39);
+            this.tableLayoutPanel2.Size = new System.Drawing.Size(794, 48);
             this.tableLayoutPanel2.TabIndex = 0;
             // 
             // label1
@@ -245,13 +145,13 @@
             this.tableLayoutPanel3.Controls.Add(this.btEditar, 1, 0);
             this.tableLayoutPanel3.Controls.Add(this.btAgregar, 0, 0);
             this.tableLayoutPanel3.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tableLayoutPanel3.Location = new System.Drawing.Point(3, 48);
+            this.tableLayoutPanel3.Location = new System.Drawing.Point(3, 57);
             this.tableLayoutPanel3.Name = "tableLayoutPanel3";
             this.tableLayoutPanel3.RowCount = 1;
             this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
             this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 76F));
             this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 76F));
-            this.tableLayoutPanel3.Size = new System.Drawing.Size(794, 76);
+            this.tableLayoutPanel3.Size = new System.Drawing.Size(794, 92);
             this.tableLayoutPanel3.TabIndex = 1;
             // 
             // btEliminar
@@ -261,7 +161,7 @@
             this.btEliminar.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.btEliminar.Location = new System.Drawing.Point(531, 3);
             this.btEliminar.Name = "btEliminar";
-            this.btEliminar.Size = new System.Drawing.Size(260, 70);
+            this.btEliminar.Size = new System.Drawing.Size(260, 86);
             this.btEliminar.TabIndex = 2;
             this.btEliminar.Text = "Eliminar";
             this.btEliminar.UseVisualStyleBackColor = false;
@@ -273,7 +173,7 @@
             this.btEditar.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.btEditar.Location = new System.Drawing.Point(267, 3);
             this.btEditar.Name = "btEditar";
-            this.btEditar.Size = new System.Drawing.Size(258, 70);
+            this.btEditar.Size = new System.Drawing.Size(258, 86);
             this.btEditar.TabIndex = 1;
             this.btEditar.Text = "Editar";
             this.btEditar.UseVisualStyleBackColor = false;
@@ -285,7 +185,7 @@
             this.btAgregar.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.btAgregar.Location = new System.Drawing.Point(3, 3);
             this.btAgregar.Name = "btAgregar";
-            this.btAgregar.Size = new System.Drawing.Size(258, 70);
+            this.btAgregar.Size = new System.Drawing.Size(258, 86);
             this.btAgregar.TabIndex = 0;
             this.btAgregar.Text = "Añadir";
             this.btAgregar.UseVisualStyleBackColor = false;
@@ -306,12 +206,12 @@
             this.tableLayoutPanel4.Controls.Add(this.txbNombre, 0, 1);
             this.tableLayoutPanel4.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tableLayoutPanel4.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.tableLayoutPanel4.Location = new System.Drawing.Point(3, 130);
+            this.tableLayoutPanel4.Location = new System.Drawing.Point(3, 155);
             this.tableLayoutPanel4.Name = "tableLayoutPanel4";
             this.tableLayoutPanel4.RowCount = 2;
             this.tableLayoutPanel4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
             this.tableLayoutPanel4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel4.Size = new System.Drawing.Size(794, 56);
+            this.tableLayoutPanel4.Size = new System.Drawing.Size(794, 68);
             this.tableLayoutPanel4.TabIndex = 2;
             // 
             // txbApellido2
@@ -319,7 +219,7 @@
             this.txbApellido2.BackColor = System.Drawing.SystemColors.AppWorkspace;
             this.txbApellido2.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txbApellido2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.txbApellido2.Location = new System.Drawing.Point(530, 29);
+            this.txbApellido2.Location = new System.Drawing.Point(530, 35);
             this.txbApellido2.Margin = new System.Windows.Forms.Padding(0);
             this.txbApellido2.Name = "txbApellido2";
             this.txbApellido2.Size = new System.Drawing.Size(262, 15);
@@ -331,7 +231,7 @@
             this.label5.Dock = System.Windows.Forms.DockStyle.Fill;
             this.label5.Location = new System.Drawing.Point(533, 2);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(256, 25);
+            this.label5.Size = new System.Drawing.Size(256, 31);
             this.label5.TabIndex = 4;
             this.label5.Text = "Apellido2 :";
             // 
@@ -340,7 +240,7 @@
             this.txbApellido.BackColor = System.Drawing.SystemColors.AppWorkspace;
             this.txbApellido.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txbApellido.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.txbApellido.Location = new System.Drawing.Point(266, 29);
+            this.txbApellido.Location = new System.Drawing.Point(266, 35);
             this.txbApellido.Margin = new System.Windows.Forms.Padding(0);
             this.txbApellido.Name = "txbApellido";
             this.txbApellido.Size = new System.Drawing.Size(262, 15);
@@ -352,7 +252,7 @@
             this.label3.Dock = System.Windows.Forms.DockStyle.Fill;
             this.label3.Location = new System.Drawing.Point(269, 2);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(256, 25);
+            this.label3.Size = new System.Drawing.Size(256, 31);
             this.label3.TabIndex = 1;
             this.label3.Text = "Apellido :";
             // 
@@ -364,7 +264,7 @@
             this.label2.ForeColor = System.Drawing.SystemColors.ButtonFace;
             this.label2.Location = new System.Drawing.Point(5, 2);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(256, 25);
+            this.label2.Size = new System.Drawing.Size(256, 31);
             this.label2.TabIndex = 0;
             this.label2.Text = "Nombre :";
             // 
@@ -373,7 +273,7 @@
             this.txbNombre.BackColor = System.Drawing.SystemColors.AppWorkspace;
             this.txbNombre.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txbNombre.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.txbNombre.Location = new System.Drawing.Point(2, 29);
+            this.txbNombre.Location = new System.Drawing.Point(2, 35);
             this.txbNombre.Margin = new System.Windows.Forms.Padding(0);
             this.txbNombre.Name = "txbNombre";
             this.txbNombre.Size = new System.Drawing.Size(262, 15);
@@ -386,12 +286,12 @@
             this.tableLayoutPanel5.Controls.Add(this.lblNumeroTelefono, 0, 0);
             this.tableLayoutPanel5.Controls.Add(this.txbTelefono, 0, 1);
             this.tableLayoutPanel5.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tableLayoutPanel5.Location = new System.Drawing.Point(3, 192);
+            this.tableLayoutPanel5.Location = new System.Drawing.Point(3, 229);
             this.tableLayoutPanel5.Name = "tableLayoutPanel5";
             this.tableLayoutPanel5.RowCount = 2;
             this.tableLayoutPanel5.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
             this.tableLayoutPanel5.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel5.Size = new System.Drawing.Size(794, 56);
+            this.tableLayoutPanel5.Size = new System.Drawing.Size(794, 68);
             this.tableLayoutPanel5.TabIndex = 3;
             // 
             // lblNumeroTelefono
@@ -402,7 +302,7 @@
             this.lblNumeroTelefono.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.lblNumeroTelefono.Location = new System.Drawing.Point(3, 0);
             this.lblNumeroTelefono.Name = "lblNumeroTelefono";
-            this.lblNumeroTelefono.Size = new System.Drawing.Size(788, 28);
+            this.lblNumeroTelefono.Size = new System.Drawing.Size(788, 34);
             this.lblNumeroTelefono.TabIndex = 0;
             this.lblNumeroTelefono.Text = "Numero de Telefono";
             // 
@@ -410,7 +310,7 @@
             // 
             this.txbTelefono.BackColor = System.Drawing.SystemColors.AppWorkspace;
             this.txbTelefono.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.txbTelefono.Location = new System.Drawing.Point(3, 31);
+            this.txbTelefono.Location = new System.Drawing.Point(3, 37);
             this.txbTelefono.Name = "txbTelefono";
             this.txbTelefono.Size = new System.Drawing.Size(788, 22);
             this.txbTelefono.TabIndex = 1;
@@ -424,12 +324,12 @@
             this.tableLayoutPanel6.Controls.Add(this.btGuardar, 1, 0);
             this.tableLayoutPanel6.Controls.Add(this.btCerrar, 1, 1);
             this.tableLayoutPanel6.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tableLayoutPanel6.Location = new System.Drawing.Point(3, 254);
+            this.tableLayoutPanel6.Location = new System.Drawing.Point(3, 303);
             this.tableLayoutPanel6.Name = "tableLayoutPanel6";
             this.tableLayoutPanel6.RowCount = 2;
             this.tableLayoutPanel6.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
             this.tableLayoutPanel6.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel6.Size = new System.Drawing.Size(794, 121);
+            this.tableLayoutPanel6.Size = new System.Drawing.Size(794, 144);
             this.tableLayoutPanel6.TabIndex = 4;
             // 
             // btGuardar
@@ -439,7 +339,7 @@
             this.btGuardar.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.btGuardar.Location = new System.Drawing.Point(267, 3);
             this.btGuardar.Name = "btGuardar";
-            this.btGuardar.Size = new System.Drawing.Size(258, 54);
+            this.btGuardar.Size = new System.Drawing.Size(258, 66);
             this.btGuardar.TabIndex = 0;
             this.btGuardar.Text = "Guardar";
             this.btGuardar.UseVisualStyleBackColor = false;
@@ -450,9 +350,9 @@
             this.btCerrar.BackColor = System.Drawing.SystemColors.AppWorkspace;
             this.btCerrar.Dock = System.Windows.Forms.DockStyle.Fill;
             this.btCerrar.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.btCerrar.Location = new System.Drawing.Point(267, 63);
+            this.btCerrar.Location = new System.Drawing.Point(267, 75);
             this.btCerrar.Name = "btCerrar";
-            this.btCerrar.Size = new System.Drawing.Size(258, 55);
+            this.btCerrar.Size = new System.Drawing.Size(258, 66);
             this.btCerrar.TabIndex = 1;
             this.btCerrar.Text = "Cancelar";
             this.btCerrar.UseVisualStyleBackColor = false;
@@ -464,12 +364,9 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.tableLayoutPanel1);
-            this.Controls.Add(this.msPrincipal);
             this.Name = "FormularioUsuario";
             this.Text = "Formulario Usuario";
             this.Load += new System.EventHandler(this.FormularioUsuario_Load);
-            this.msPrincipal.ResumeLayout(false);
-            this.msPrincipal.PerformLayout();
             this.tableLayoutPanel1.ResumeLayout(false);
             this.tableLayoutPanel2.ResumeLayout(false);
             this.tableLayoutPanel2.PerformLayout();
@@ -480,21 +377,10 @@
             this.tableLayoutPanel5.PerformLayout();
             this.tableLayoutPanel6.ResumeLayout(false);
             this.ResumeLayout(false);
-            this.PerformLayout();
 
         }
 
         #endregion
-
-        private System.Windows.Forms.MenuStrip msPrincipal;
-        private System.Windows.Forms.ToolStripMenuItem smiInsertar;
-        private System.Windows.Forms.ToolStripMenuItem smiInsertarEmpleado;
-        private System.Windows.Forms.ToolStripMenuItem nombreToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem apellidoToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem toolStripMenuItem1;
-        private System.Windows.Forms.ToolStripMenuItem menUsuarios;
-        private System.Windows.Forms.ToolStripMenuItem menLibros;
-        private System.Windows.Forms.ToolStripMenuItem menPrestamos;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel1;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel2;
         private System.Windows.Forms.Label label1;
