@@ -1,6 +1,6 @@
 ﻿namespace ProyectoBiblioteca
 {
-    partial class FormularioUsuario
+    partial class FormularioUsuario :  System.Windows.Forms.Form
     {
         /// <summary>
         /// Required designer variable.

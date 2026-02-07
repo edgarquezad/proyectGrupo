@@ -1,14 +1,7 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
 using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 using ProyectoBiblioteca.Controlador;
-using ProyectoBiblioteca.Modelo.Libro;
 using ProyectoBiblioteca.Vista;
 
 namespace ProyectoBiblioteca
@@ -16,7 +9,7 @@ namespace ProyectoBiblioteca
     public partial class FormularioLibros : Form
     {
         public controlador controladorLibro { get; set; } //creamos los metos get y set para poder acceder a sus propiedades desde el formularioPricipal(Inicio)
-                                                //permite que el formulario Pricipal(Inicio) le pase el controlador , no creamos otro controlador trabajamos con uno solo
+                                                          //permite que el formulario Pricipal(Inicio) le pase el controlador , no creamos otro controlador trabajamos con uno solo
         public FormularioLibros()
         {
             InitializeComponent();
@@ -42,10 +35,10 @@ namespace ProyectoBiblioteca
 
             foreach (DataRow row in datos.Rows)
             {
-             ControlUsuarioProyecto.ControlUsuario control = new ControlUsuarioProyecto.ControlUsuario();
+                ControlUsuarioProyecto.ControlUsuario control = new ControlUsuarioProyecto.ControlUsuario();
                 control.tipo = ControlUsuarioProyecto.ControlUsuario.TipoEntidad.Libro; //importante hay que elegir el tipo de entidad.
                 control.Id = (int)row.Field<long>("id");
-                control.Nombre = row.Field<string>("Titulo") ;
+                control.Nombre = row.Field<string>("Titulo");
                 control.Apellido = row.Field<string>("Escritor");
                 control.eliminarLibro += Control_eliminarLibro;
                 control.AgregarLibro += Control_AgregarLibro1;

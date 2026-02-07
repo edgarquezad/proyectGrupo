@@ -1,18 +1,12 @@
-﻿using System;
-using System.CodeDom;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using System.Data;
 using System.Data.SQLite;
-using System.Linq;
-using System.Linq.Expressions;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace ProyectoBiblioteca.Modelo.Libro
 {
-  internal class ListaLibros
+    internal class ListaLibros
     {
-        
+
         private string ruta = Properties.Settings.Default.conexion;
 
 
@@ -26,8 +20,8 @@ namespace ProyectoBiblioteca.Modelo.Libro
             cmd.Parameters.AddWithValue("@Ano_Edicion", Ano_edicion);
             cmd.Parameters.AddWithValue("@Sinopsis", Sinopsis);
             cmd.Parameters.AddWithValue("@Disponible", Disponible);
-           // Conexion.Ejecuta(ruta, cmd);
-           
+            // Conexion.Ejecuta(ruta, cmd);
+
             Conexion.Ejecuta(ruta, cmd);
 
         }
@@ -72,7 +66,7 @@ namespace ProyectoBiblioteca.Modelo.Libro
             SQLiteCommand cmd;
             string sql = "SELECT * FROM Libros";
             cmd = new SQLiteCommand(sql);
-            using (SQLiteDataReader dr = Conexion.GetDataReader(ruta,cmd))
+            using (SQLiteDataReader dr = Conexion.GetDataReader(ruta, cmd))
             {
                 while (dr.Read())
                 {
@@ -95,8 +89,8 @@ namespace ProyectoBiblioteca.Modelo.Libro
         {
             string sql = $"DELETE FROM Libros WHERE ID={id}";
             SQLiteCommand cmd = new SQLiteCommand(sql);
-           // Conexion.Ejecuta(Properties.Settings.Default.conexion, cmd);
-            Conexion.Ejecuta(ruta,cmd);
+            // Conexion.Ejecuta(Properties.Settings.Default.conexion, cmd);
+            Conexion.Ejecuta(ruta, cmd);
         }
         public DataTable CargarTodo()
         {
@@ -109,6 +103,6 @@ namespace ProyectoBiblioteca.Modelo.Libro
     }
 
 
-    
+
 }
 

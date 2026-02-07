@@ -1,11 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 using ProyectoBiblioteca.Controlador;
 
@@ -41,7 +34,7 @@ namespace ProyectoBiblioteca.Vista
         private void btGuardar_Click(object sender, EventArgs e)
         {
             controladorAgregarLib.InsertarLibro(tbTitulo.Text, tbEscritor.Text, int.Parse(tbAno_edicion.Text), tbSinopsis.Text, int.Parse(tbDisponible.Text));
-    
+
             this.Close();
 
         }
@@ -58,7 +51,7 @@ namespace ProyectoBiblioteca.Vista
 
         private void menUsuarios_Click(object sender, EventArgs e)
         {
-         
+
         }
 
         private void btCancelar_Click(object sender, EventArgs e)

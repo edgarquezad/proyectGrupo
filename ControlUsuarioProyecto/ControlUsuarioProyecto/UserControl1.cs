@@ -1,21 +1,15 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
 using System.Drawing;
-using System.Data;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace ControlUsuarioProyecto
 {
     public partial class ControlUsuario : UserControl
     {
-    
-        public enum TipoEntidad { Usuario ,Libro}
-        public TipoEntidad tipo {get; set;}
-            
+
+        public enum TipoEntidad { Usuario, Libro }
+        public TipoEntidad tipo { get; set; }
+
         public ControlUsuario()
         {
             InitializeComponent();
@@ -66,14 +60,14 @@ namespace ControlUsuarioProyecto
 
         public event EventHandler<ClickarBotonSeleccionarEventArgs> AgregarUsuario;
 
-        public event EventHandler<ClickarBotonSeleccionarEventArgs>eliminarLibro;
+        public event EventHandler<ClickarBotonSeleccionarEventArgs> eliminarLibro;
 
         public event EventHandler<ClickarBotonSeleccionarEventArgs> AgregarLibro;
 
 
         private void btAgregar_Click(object sender, EventArgs e)
         {
-        
+
             if (tipo == TipoEntidad.Usuario)
             {
                 AgregarUsuario?.Invoke(this, new ClickarBotonSeleccionarEventArgs(id));
@@ -105,9 +99,9 @@ namespace ControlUsuarioProyecto
 
         private void btEliminar_Click_1(object sender, EventArgs e)
         {
-            if (ckSeleccionar.Checked)  
-            btEliminar_Click(sender, e);
-            
+            if (ckSeleccionar.Checked)
+                btEliminar_Click(sender, e);
+
         }
 
         private void btAgregar_Click_1(object sender, EventArgs e)

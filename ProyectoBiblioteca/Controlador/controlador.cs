@@ -1,11 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Data;
-using System.Drawing;
-using System.Drawing.Text;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using ProyectoBiblioteca.Modelo;
 using ProyectoBiblioteca.Modelo.Libro;
 
@@ -17,11 +12,11 @@ namespace ProyectoBiblioteca.Controlador
         /// <summary>
         ///USUARIO  controlador de insertar usuaruio y filtrar usuario , "faltaria eliminar usuario, intentar completarlo "
         /// </summary>
-        private ListaUsuarios listaUsuarios= new ListaUsuarios();
-        private ListaLibros listaLibros= new ListaLibros();
-     
+        private ListaUsuarios listaUsuarios = new ListaUsuarios();
+        private ListaLibros listaLibros = new ListaLibros();
 
- 
+
+
         public void InsertarUsuario(string nombre, string Apellido1, string Apellido2, int telefono)
         {
             string errores = "";
@@ -33,9 +28,9 @@ namespace ProyectoBiblioteca.Controlador
                 errores += "Falta el primer apellido" + Environment.NewLine;
 
             if (telefono <= 9)
-            
+
                 errores += "falta numero de telefono " + Environment.NewLine;
-           
+
 
             if (!string.IsNullOrEmpty(errores)) // si el error es de¡iferente de nulo  vacio entra el error 
                 throw new Exception(errores);
@@ -52,9 +47,9 @@ namespace ProyectoBiblioteca.Controlador
 
             if (esId)
                 usuarios = listaUsuarios.filtrarUsuarios("", id);
-            else 
-                usuarios = listaUsuarios.filtrarUsuarios(texto,0);
-            
+            else
+                usuarios = listaUsuarios.filtrarUsuarios(texto, 0);
+
             if (usuarios.Count == 0)
                 throw new Exception("No se encontraron usuarios con esos criterios");
 
@@ -66,7 +61,8 @@ namespace ProyectoBiblioteca.Controlador
             return resultado;
 
         }
-        public List<Usuario> MostrarUsuarios(){
+        public List<Usuario> MostrarUsuarios()
+        {
             List<Usuario> usuarios = listaUsuarios.obtenerUsuarios();
             if (usuarios.Count == 0)
                 throw new Exception("La lista de usuarios está vacía");
@@ -82,26 +78,26 @@ namespace ProyectoBiblioteca.Controlador
                return listaLibros.obtenerLibros();
           }*/
 
-        public bool eliminarLibro(int id )
+        public bool eliminarLibro(int id)
         {
             listaLibros.EliminarLibro(id);
-            
-            return true ;  
-    }
+
+            return true;
+        }
         public DataTable CargarDatos()
         {
             return listaLibros.CargarTodo();
         }
 
-        public void InsertarLibro(string titulo, string escritor, int ano_edicion, string sinopsis, int disponible )
+        public void InsertarLibro(string titulo, string escritor, int ano_edicion, string sinopsis, int disponible)
         {
             if (titulo.Trim().Length == 0)
-                throw new Exception( "Falta el titulo" + Environment.NewLine);
+                throw new Exception("Falta el titulo" + Environment.NewLine);
             if (escritor.Trim().Length == 0)
                 throw new Exception("Falta el escritor" + Environment.NewLine);
-            if (ano_edicion <= 0 )
+            if (ano_edicion <= 0)
                 throw new Exception("Falta el año de edicion " + Environment.NewLine);
-     
+
             listaLibros.AgregarLibros(titulo, escritor, ano_edicion, sinopsis, disponible);
         }
 

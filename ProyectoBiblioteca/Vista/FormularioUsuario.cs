@@ -1,21 +1,13 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Drawing.Text;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Data;
 using ProyectoBiblioteca.Controlador;
-using ProyectoBiblioteca.Modelo;
 
 namespace ProyectoBiblioteca
 {
     public partial class FormularioUsuario : Form
     {
-        public controlador UsuarioU{ get; set; }
+        public controlador UsuarioU { get; set; }
 
         public FormularioUsuario()
         {
@@ -30,7 +22,7 @@ namespace ProyectoBiblioteca
             txbApellido2.Text = "";
             txbTelefono.Text = "";
             txbBuscarUsuario.Text = "";
-       }
+        }
 
         private void btGuardar_Click(object sender, EventArgs e)
 

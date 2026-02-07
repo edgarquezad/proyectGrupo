@@ -1,15 +1,8 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Runtime.Remoting.Metadata.W3cXsd2001;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace ProyectoBiblioteca.Modelo.Libro
+﻿namespace ProyectoBiblioteca.Modelo.Libro
 {
     public class Libro
     {
-            
+
         public int Id { get; set; }
         public string Titulo { get; set; }
         public string Escritor { get; set; }
@@ -26,6 +19,6 @@ namespace ProyectoBiblioteca.Modelo.Libro
             Sinopsis = sinopsis;
             Disponible = disponible;
         }
-     
+
     }
 }
