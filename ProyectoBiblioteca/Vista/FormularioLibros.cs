@@ -17,7 +17,7 @@ namespace ProyectoBiblioteca
 
         private void FormularioLibros_Load(object sender, EventArgs e)
         {
-            Cargar(controladorLibro.CargarDatos());
+            Cargar(controladorLibro.CargarDatosLibro());
         }
 
         private void smiInsertar_Click(object sender, EventArgs e)
@@ -40,8 +40,8 @@ namespace ProyectoBiblioteca
                 control.Id = (int)row.Field<long>("id");
                 control.Nombre = row.Field<string>("Titulo");
                 control.Apellido = row.Field<string>("Escritor");
-                control.eliminarLibro += Control_eliminarLibro;
-                control.AgregarLibro += Control_AgregarLibro1;
+                control.Editar += Control_eliminarLibro;
+                control.Eliminar += Control_AgregarLibro1;
                 control.Dock = DockStyle.Fill;
                 tableLayoutPanelLibros.RowCount = tableLayoutPanelLibros.RowCount + 1;
                 tableLayoutPanelLibros.RowStyles.Insert(nuevaFila, new RowStyle(SizeType.AutoSize));
@@ -58,14 +58,14 @@ namespace ProyectoBiblioteca
             this.Hide();
             form.ShowDialog();
             this.Show();
-            Cargar(controladorLibro.CargarDatos());
+            Cargar(controladorLibro.CargarDatosLibro());
         }
 
 
         private void Control_eliminarLibro(object sender, ControlUsuarioProyecto.ControlUsuario.ClickarBotonSeleccionarEventArgs e)
         {
             controladorLibro.eliminarLibro(e.Id);
-            Cargar(controladorLibro.CargarDatos());
+            Cargar(controladorLibro.CargarDatosLibro());
             MessageBox.Show("libro eliminado correctamente");
 
         }

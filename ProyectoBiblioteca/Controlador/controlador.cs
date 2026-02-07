@@ -38,45 +38,43 @@ namespace ProyectoBiblioteca.Controlador
         }
 
 
-        public List<string> FiltrarUsuarios(string texto)
-
+        public DataTable FiltrarUsuarios(string texto)
         {
             int id;
             bool esId = int.TryParse(texto, out id);
-            List<Usuario> usuarios;
 
             if (esId)
-                usuarios = listaUsuarios.filtrarUsuarios("", id);
+                return listaUsuarios.filtrarUsuarios("", id);
             else
-                usuarios = listaUsuarios.filtrarUsuarios(texto, 0);
-
-            if (usuarios.Count == 0)
-                throw new Exception("No se encontraron usuarios con esos criterios");
-
-            List<string> resultado = new List<string>();
-
-            foreach (Usuario u in usuarios)
-
-                resultado.Add($"{u.Id} - {u.Nombre} {u.Apellido1} {u.Apellido2} ({u.Telefono})");
-            return resultado;
-
+                return listaUsuarios.filtrarUsuarios(texto, 0);
         }
-        public List<Usuario> MostrarUsuarios()
+
+
+        public bool eliminarUsuario(int id)
         {
-            List<Usuario> usuarios = listaUsuarios.obtenerUsuarios();
-            if (usuarios.Count == 0)
-                throw new Exception("La lista de usuarios está vacía");
-            else
+            listaUsuarios.eliminarUsuario(id);
 
-                return usuarios;
-
+            return true;
         }
+        public DataTable CargarDatosUsuario()
+        {
+            return listaUsuarios.CargarTodo();
+        }
+        public DataTable EditarUsuario( int id )
+        {
+            if (id <= 0)
+                throw new Exception("Falta el id del usuario" + Environment.NewLine);
+            else 
+                listaUsuarios.editarUsuario(id);
+
+
+            return listaUsuarios.CargarTodo();
+        }
+
 
         // Controlador de Libros 
 
-        /* public List<Libro> MostrarLibros() {   no consigo ponerlo a la vista sin comprometer mvc usaremos el DataTable
-               return listaLibros.obtenerLibros();
-          }*/
+
 
         public bool eliminarLibro(int id)
         {
@@ -84,7 +82,7 @@ namespace ProyectoBiblioteca.Controlador
 
             return true;
         }
-        public DataTable CargarDatos()
+        public DataTable CargarDatosLibro()
         {
             return listaLibros.CargarTodo();
         }

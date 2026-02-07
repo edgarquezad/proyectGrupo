@@ -1,4 +1,5 @@
 ﻿using System.Collections.Generic;
+using System.Data;
 using System.Data.SQLite;
 
 namespace ProyectoBiblioteca.Modelo
@@ -19,9 +20,10 @@ namespace ProyectoBiblioteca.Modelo
 
 
         }
-        public List<Usuario> filtrarUsuarios(string texto, int id)
+        public DataTable filtrarUsuarios(string texto, int id)
         {
-            List<Usuario> resultado = new List<Usuario>();
+
+            DataTable datos = new DataTable();
             SQLiteCommand cmd;
             {
                 if (id > 0)
@@ -37,64 +39,39 @@ namespace ProyectoBiblioteca.Modelo
                     cmd.Parameters.AddWithValue("@texto", "%" + texto + "%"); // para que sirven los %% no lo veo
                 }
 
-                using (SQLiteDataReader dr = Conexion.GetDataReader(ruta, cmd))
-                {
-                    while (dr.Read())
-                    {
-                        resultado.Add(new Usuario(
-                            dr.GetInt32(0),
-                            dr.GetString(1),
-                            dr.GetString(2),
-                            dr.GetString(3),
-                            dr.GetInt32(4)
-                        ));
-                    }
-                }
+                datos = Conexion.GetDataTable(ruta, cmd);
+                
+             
             }
-            return resultado;
+            return datos;
         }
 
-        public List<Usuario> obtenerUsuarios()
+      
+
+        public void eliminarUsuario(int id)
         {
-            List<Usuario> lista2 = new List<Usuario>();
-
-            SQLiteCommand cmd;
-
-            string sql = "SELECT ID,Nombre,Apellido_1,Apellido_2,Telefono FROM Usuarios";
-            cmd = new SQLiteCommand(sql);
-
-            using (SQLiteDataReader dr = Conexion.GetDataReader(sql, cmd))
-            {
-                while (dr.Read())
-                {
-                    lista2.Add(new Usuario(
-                        dr.GetInt32(0),
-                        dr.GetString(1),
-                        dr.GetString(2),
-                        dr.GetString(3),
-                         dr.GetInt32(4)
-
-                    ));
-                }
-            }
-
-
-            return lista2;
+            string sql = $"DELETE FROM Usuarios WHERE ID={id}";
+            SQLiteCommand cmd = new SQLiteCommand(sql);
+            Conexion.Ejecuta(ruta, cmd);
+        }
+        public DataTable CargarTodo()
+        {
+            DataTable datos = new DataTable();
+            string sql = "SELECT * FROM Usuarios";
+            SQLiteCommand cmd = new SQLiteCommand(sql);
+            datos = Conexion.GetDataTable(ruta, cmd);
+            return datos;
         }
 
-        /* public bool usuarioExistente(int telefono) //
-         {
-              foreach (Usuario usuarioR in Usuarios)
-               {
-             //      if (usuarioR.Telefono == telefono)
-                   {
-                       return true;
-                   }
-               }
+        public DataTable editarUsuario(int id )
+        {
+            DataTable datos = new DataTable();
+            string sql = $"UPDATE Usuarios SET Nombre=@Nombre, Apellido_1=@Apellido_1, Apellido_2=@Apellido_2, Telefono=@Telefono WHERE ID={id}";
+            SQLiteCommand cmd = new SQLiteCommand(sql);
 
-           return false;
-
-           }*/
+           datos = Conexion.GetDataTable(ruta, cmd);
+            return datos;
+        }
 
     }
 }

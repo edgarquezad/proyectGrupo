@@ -56,44 +56,24 @@ namespace ControlUsuarioProyecto
 
             }
         }
-        public event EventHandler<ClickarBotonSeleccionarEventArgs> eliminarUsuario;
 
-        public event EventHandler<ClickarBotonSeleccionarEventArgs> AgregarUsuario;
+        public event EventHandler<ClickarBotonSeleccionarEventArgs> Editar;
 
-        public event EventHandler<ClickarBotonSeleccionarEventArgs> eliminarLibro;
-
-        public event EventHandler<ClickarBotonSeleccionarEventArgs> AgregarLibro;
+        public event EventHandler<ClickarBotonSeleccionarEventArgs> Eliminar;
 
 
-        private void btAgregar_Click(object sender, EventArgs e)
+        private void btEditar_(object sender, EventArgs e)
         {
-
-            if (tipo == TipoEntidad.Usuario)
-            {
-                AgregarUsuario?.Invoke(this, new ClickarBotonSeleccionarEventArgs(id));
-            }
-            else if (tipo == TipoEntidad.Libro)
-            {
-                AgregarLibro?.Invoke(this, new ClickarBotonSeleccionarEventArgs(id));
-            }
-            else
-            {
-                MessageBox.Show("Tipo NO ES libro");
-            }
+            Editar?.Invoke(this, new ClickarBotonSeleccionarEventArgs(id));
         }
+
+
 
         private void btEliminar_Click(object sender, EventArgs e)
         {
-            if (tipo == TipoEntidad.Usuario)
-            {
-                eliminarUsuario?.Invoke(this, new ClickarBotonSeleccionarEventArgs(id));
-            }
-            else if (tipo == TipoEntidad.Libro)
-            {
-                eliminarLibro?.Invoke(this, new ClickarBotonSeleccionarEventArgs(id));
-            }
-            else
-                throw new Exception("mal error ");
+           
+                Eliminar?.Invoke(this, new ClickarBotonSeleccionarEventArgs(id));
+          
 
         }
 
@@ -104,10 +84,7 @@ namespace ControlUsuarioProyecto
 
         }
 
-        private void btAgregar_Click_1(object sender, EventArgs e)
-        {
-            btAgregar_Click(sender, e);
-        }
+    
 
         private void tableLayoutPanel1_Paint(object sender, PaintEventArgs e)
         {
@@ -116,6 +93,14 @@ namespace ControlUsuarioProyecto
 
         private void tableLayoutPanel2_Paint(object sender, PaintEventArgs e)
         {
+
+        }
+
+        private void btEditar_Click(object sender, EventArgs e)
+        {
+            if (ckSeleccionar.Checked)
+                btEditar_(sender, e);
+
 
         }
     }
