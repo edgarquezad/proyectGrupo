@@ -59,6 +59,12 @@
     <Compile Include="Vista\formularioAgregarLibro.Designer.cs">
       <DependentUpon>formularioAgregarLibro.cs</DependentUpon>
     </Compile>
+    <Compile Include="Vista\FormularioAgregarUsuario.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Vista\FormularioAgregarUsuario.Designer.cs">
+      <DependentUpon>FormularioAgregarUsuario.cs</DependentUpon>
+    </Compile>
     <Compile Include="Vista\FormularioInicio.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -87,6 +93,9 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="Vista\formularioAgregarLibro.resx">
       <DependentUpon>formularioAgregarLibro.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Vista\FormularioAgregarUsuario.resx">
+      <DependentUpon>FormularioAgregarUsuario.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Vista\FormularioInicio.resx">
       <DependentUpon>FormularioInicio.cs</DependentUpon>

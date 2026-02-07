@@ -1,6 +1,6 @@
-﻿using System;
+﻿using ProyectoBiblioteca.Controlador;
+using System;
 using System.Windows.Forms;
-using ProyectoBiblioteca.Controlador;
 
 namespace ProyectoBiblioteca.Vista
 {

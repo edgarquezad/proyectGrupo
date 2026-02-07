@@ -69,6 +69,7 @@
             this.tableLayoutPanel1.Controls.Add(this.tableLayoutPanel6, 0, 4);
             this.tableLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tableLayoutPanel1.Location = new System.Drawing.Point(0, 0);
+            this.tableLayoutPanel1.Margin = new System.Windows.Forms.Padding(2);
             this.tableLayoutPanel1.Name = "tableLayoutPanel1";
             this.tableLayoutPanel1.RowCount = 5;
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 12.04253F));
@@ -76,7 +77,7 @@
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 16.51549F));
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 16.51549F));
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 33.03098F));
-            this.tableLayoutPanel1.Size = new System.Drawing.Size(800, 450);
+            this.tableLayoutPanel1.Size = new System.Drawing.Size(600, 366);
             this.tableLayoutPanel1.TabIndex = 3;
             // 
             // tableLayoutPanel2
@@ -89,12 +90,13 @@
             this.tableLayoutPanel2.Controls.Add(this.txbBuscarUsuario, 1, 0);
             this.tableLayoutPanel2.Controls.Add(this.btBuscar, 2, 0);
             this.tableLayoutPanel2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tableLayoutPanel2.Location = new System.Drawing.Point(3, 3);
+            this.tableLayoutPanel2.Location = new System.Drawing.Point(2, 2);
+            this.tableLayoutPanel2.Margin = new System.Windows.Forms.Padding(2);
             this.tableLayoutPanel2.Name = "tableLayoutPanel2";
             this.tableLayoutPanel2.RowCount = 1;
             this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle());
-            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 55F));
-            this.tableLayoutPanel2.Size = new System.Drawing.Size(794, 48);
+            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 45F));
+            this.tableLayoutPanel2.Size = new System.Drawing.Size(596, 40);
             this.tableLayoutPanel2.TabIndex = 0;
             // 
             // label1
@@ -102,10 +104,10 @@
             this.label1.AutoSize = true;
             this.label1.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.label1.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.label1.Location = new System.Drawing.Point(3, 20);
-            this.label1.Margin = new System.Windows.Forms.Padding(3, 20, 3, 0);
+            this.label1.Location = new System.Drawing.Point(2, 16);
+            this.label1.Margin = new System.Windows.Forms.Padding(2, 16, 2, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(108, 16);
+            this.label1.Size = new System.Drawing.Size(88, 13);
             this.label1.TabIndex = 0;
             this.label1.Text = "Buscar Usuario : ";
             // 
@@ -115,10 +117,10 @@
             this.txbBuscarUsuario.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txbBuscarUsuario.Dock = System.Windows.Forms.DockStyle.Fill;
             this.txbBuscarUsuario.ForeColor = System.Drawing.SystemColors.InactiveBorder;
-            this.txbBuscarUsuario.Location = new System.Drawing.Point(117, 20);
-            this.txbBuscarUsuario.Margin = new System.Windows.Forms.Padding(3, 20, 3, 20);
+            this.txbBuscarUsuario.Location = new System.Drawing.Point(94, 16);
+            this.txbBuscarUsuario.Margin = new System.Windows.Forms.Padding(2, 16, 2, 16);
             this.txbBuscarUsuario.Name = "txbBuscarUsuario";
-            this.txbBuscarUsuario.Size = new System.Drawing.Size(433, 15);
+            this.txbBuscarUsuario.Size = new System.Drawing.Size(321, 13);
             this.txbBuscarUsuario.TabIndex = 1;
             // 
             // btBuscar
@@ -126,10 +128,10 @@
             this.btBuscar.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.btBuscar.Dock = System.Windows.Forms.DockStyle.Fill;
             this.btBuscar.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.btBuscar.Location = new System.Drawing.Point(568, 15);
-            this.btBuscar.Margin = new System.Windows.Forms.Padding(15);
+            this.btBuscar.Location = new System.Drawing.Point(428, 12);
+            this.btBuscar.Margin = new System.Windows.Forms.Padding(11, 12, 11, 12);
             this.btBuscar.Name = "btBuscar";
-            this.btBuscar.Size = new System.Drawing.Size(211, 25);
+            this.btBuscar.Size = new System.Drawing.Size(157, 21);
             this.btBuscar.TabIndex = 2;
             this.btBuscar.Text = "Search";
             this.btBuscar.UseVisualStyleBackColor = false;
@@ -145,13 +147,14 @@
             this.tableLayoutPanel3.Controls.Add(this.btEditar, 1, 0);
             this.tableLayoutPanel3.Controls.Add(this.btAgregar, 0, 0);
             this.tableLayoutPanel3.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tableLayoutPanel3.Location = new System.Drawing.Point(3, 57);
+            this.tableLayoutPanel3.Location = new System.Drawing.Point(2, 46);
+            this.tableLayoutPanel3.Margin = new System.Windows.Forms.Padding(2);
             this.tableLayoutPanel3.Name = "tableLayoutPanel3";
             this.tableLayoutPanel3.RowCount = 1;
             this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 92F));
-            this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 92F));
-            this.tableLayoutPanel3.Size = new System.Drawing.Size(794, 92);
+            this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 76F));
+            this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 76F));
+            this.tableLayoutPanel3.Size = new System.Drawing.Size(596, 76);
             this.tableLayoutPanel3.TabIndex = 1;
             // 
             // btEliminar
@@ -159,9 +162,10 @@
             this.btEliminar.BackColor = System.Drawing.Color.LightSeaGreen;
             this.btEliminar.Dock = System.Windows.Forms.DockStyle.Fill;
             this.btEliminar.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.btEliminar.Location = new System.Drawing.Point(531, 3);
+            this.btEliminar.Location = new System.Drawing.Point(398, 2);
+            this.btEliminar.Margin = new System.Windows.Forms.Padding(2);
             this.btEliminar.Name = "btEliminar";
-            this.btEliminar.Size = new System.Drawing.Size(260, 86);
+            this.btEliminar.Size = new System.Drawing.Size(196, 72);
             this.btEliminar.TabIndex = 2;
             this.btEliminar.Text = "Eliminar";
             this.btEliminar.UseVisualStyleBackColor = false;
@@ -171,9 +175,10 @@
             this.btEditar.BackColor = System.Drawing.Color.LightSeaGreen;
             this.btEditar.Dock = System.Windows.Forms.DockStyle.Fill;
             this.btEditar.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.btEditar.Location = new System.Drawing.Point(267, 3);
+            this.btEditar.Location = new System.Drawing.Point(200, 2);
+            this.btEditar.Margin = new System.Windows.Forms.Padding(2);
             this.btEditar.Name = "btEditar";
-            this.btEditar.Size = new System.Drawing.Size(258, 86);
+            this.btEditar.Size = new System.Drawing.Size(194, 72);
             this.btEditar.TabIndex = 1;
             this.btEditar.Text = "Editar";
             this.btEditar.UseVisualStyleBackColor = false;
@@ -183,12 +188,14 @@
             this.btAgregar.BackColor = System.Drawing.Color.LightSeaGreen;
             this.btAgregar.Dock = System.Windows.Forms.DockStyle.Fill;
             this.btAgregar.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.btAgregar.Location = new System.Drawing.Point(3, 3);
+            this.btAgregar.Location = new System.Drawing.Point(2, 2);
+            this.btAgregar.Margin = new System.Windows.Forms.Padding(2);
             this.btAgregar.Name = "btAgregar";
-            this.btAgregar.Size = new System.Drawing.Size(258, 86);
+            this.btAgregar.Size = new System.Drawing.Size(194, 72);
             this.btAgregar.TabIndex = 0;
             this.btAgregar.Text = "Añadir";
             this.btAgregar.UseVisualStyleBackColor = false;
+            this.btAgregar.Click += new System.EventHandler(this.btAgregar_Click);
             // 
             // tableLayoutPanel4
             // 
@@ -206,12 +213,13 @@
             this.tableLayoutPanel4.Controls.Add(this.txbNombre, 0, 1);
             this.tableLayoutPanel4.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tableLayoutPanel4.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.tableLayoutPanel4.Location = new System.Drawing.Point(3, 155);
+            this.tableLayoutPanel4.Location = new System.Drawing.Point(2, 126);
+            this.tableLayoutPanel4.Margin = new System.Windows.Forms.Padding(2);
             this.tableLayoutPanel4.Name = "tableLayoutPanel4";
             this.tableLayoutPanel4.RowCount = 2;
             this.tableLayoutPanel4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
             this.tableLayoutPanel4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel4.Size = new System.Drawing.Size(794, 68);
+            this.tableLayoutPanel4.Size = new System.Drawing.Size(596, 56);
             this.tableLayoutPanel4.TabIndex = 2;
             // 
             // txbApellido2
@@ -219,19 +227,20 @@
             this.txbApellido2.BackColor = System.Drawing.SystemColors.AppWorkspace;
             this.txbApellido2.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txbApellido2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.txbApellido2.Location = new System.Drawing.Point(530, 35);
+            this.txbApellido2.Location = new System.Drawing.Point(396, 29);
             this.txbApellido2.Margin = new System.Windows.Forms.Padding(0);
             this.txbApellido2.Name = "txbApellido2";
-            this.txbApellido2.Size = new System.Drawing.Size(262, 15);
+            this.txbApellido2.Size = new System.Drawing.Size(198, 13);
             this.txbApellido2.TabIndex = 5;
             // 
             // label5
             // 
             this.label5.AutoSize = true;
             this.label5.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label5.Location = new System.Drawing.Point(533, 2);
+            this.label5.Location = new System.Drawing.Point(398, 2);
+            this.label5.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(256, 31);
+            this.label5.Size = new System.Drawing.Size(194, 25);
             this.label5.TabIndex = 4;
             this.label5.Text = "Apellido2 :";
             // 
@@ -240,19 +249,20 @@
             this.txbApellido.BackColor = System.Drawing.SystemColors.AppWorkspace;
             this.txbApellido.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txbApellido.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.txbApellido.Location = new System.Drawing.Point(266, 35);
+            this.txbApellido.Location = new System.Drawing.Point(199, 29);
             this.txbApellido.Margin = new System.Windows.Forms.Padding(0);
             this.txbApellido.Name = "txbApellido";
-            this.txbApellido.Size = new System.Drawing.Size(262, 15);
+            this.txbApellido.Size = new System.Drawing.Size(195, 13);
             this.txbApellido.TabIndex = 3;
             // 
             // label3
             // 
             this.label3.AutoSize = true;
             this.label3.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label3.Location = new System.Drawing.Point(269, 2);
+            this.label3.Location = new System.Drawing.Point(201, 2);
+            this.label3.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(256, 31);
+            this.label3.Size = new System.Drawing.Size(191, 25);
             this.label3.TabIndex = 1;
             this.label3.Text = "Apellido :";
             // 
@@ -262,9 +272,10 @@
             this.label2.BackColor = System.Drawing.SystemColors.AppWorkspace;
             this.label2.Dock = System.Windows.Forms.DockStyle.Fill;
             this.label2.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.label2.Location = new System.Drawing.Point(5, 2);
+            this.label2.Location = new System.Drawing.Point(4, 2);
+            this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(256, 31);
+            this.label2.Size = new System.Drawing.Size(191, 25);
             this.label2.TabIndex = 0;
             this.label2.Text = "Nombre :";
             // 
@@ -273,10 +284,10 @@
             this.txbNombre.BackColor = System.Drawing.SystemColors.AppWorkspace;
             this.txbNombre.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txbNombre.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.txbNombre.Location = new System.Drawing.Point(2, 35);
+            this.txbNombre.Location = new System.Drawing.Point(2, 29);
             this.txbNombre.Margin = new System.Windows.Forms.Padding(0);
             this.txbNombre.Name = "txbNombre";
-            this.txbNombre.Size = new System.Drawing.Size(262, 15);
+            this.txbNombre.Size = new System.Drawing.Size(195, 13);
             this.txbNombre.TabIndex = 2;
             // 
             // tableLayoutPanel5
@@ -286,12 +297,13 @@
             this.tableLayoutPanel5.Controls.Add(this.lblNumeroTelefono, 0, 0);
             this.tableLayoutPanel5.Controls.Add(this.txbTelefono, 0, 1);
             this.tableLayoutPanel5.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tableLayoutPanel5.Location = new System.Drawing.Point(3, 229);
+            this.tableLayoutPanel5.Location = new System.Drawing.Point(2, 186);
+            this.tableLayoutPanel5.Margin = new System.Windows.Forms.Padding(2);
             this.tableLayoutPanel5.Name = "tableLayoutPanel5";
             this.tableLayoutPanel5.RowCount = 2;
             this.tableLayoutPanel5.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
             this.tableLayoutPanel5.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel5.Size = new System.Drawing.Size(794, 68);
+            this.tableLayoutPanel5.Size = new System.Drawing.Size(596, 56);
             this.tableLayoutPanel5.TabIndex = 3;
             // 
             // lblNumeroTelefono
@@ -300,9 +312,10 @@
             this.lblNumeroTelefono.BackColor = System.Drawing.SystemColors.AppWorkspace;
             this.lblNumeroTelefono.Dock = System.Windows.Forms.DockStyle.Fill;
             this.lblNumeroTelefono.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.lblNumeroTelefono.Location = new System.Drawing.Point(3, 0);
+            this.lblNumeroTelefono.Location = new System.Drawing.Point(2, 0);
+            this.lblNumeroTelefono.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblNumeroTelefono.Name = "lblNumeroTelefono";
-            this.lblNumeroTelefono.Size = new System.Drawing.Size(788, 34);
+            this.lblNumeroTelefono.Size = new System.Drawing.Size(592, 28);
             this.lblNumeroTelefono.TabIndex = 0;
             this.lblNumeroTelefono.Text = "Numero de Telefono";
             // 
@@ -310,9 +323,10 @@
             // 
             this.txbTelefono.BackColor = System.Drawing.SystemColors.AppWorkspace;
             this.txbTelefono.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.txbTelefono.Location = new System.Drawing.Point(3, 37);
+            this.txbTelefono.Location = new System.Drawing.Point(2, 30);
+            this.txbTelefono.Margin = new System.Windows.Forms.Padding(2);
             this.txbTelefono.Name = "txbTelefono";
-            this.txbTelefono.Size = new System.Drawing.Size(788, 22);
+            this.txbTelefono.Size = new System.Drawing.Size(592, 20);
             this.txbTelefono.TabIndex = 1;
             // 
             // tableLayoutPanel6
@@ -324,12 +338,13 @@
             this.tableLayoutPanel6.Controls.Add(this.btGuardar, 1, 0);
             this.tableLayoutPanel6.Controls.Add(this.btCerrar, 1, 1);
             this.tableLayoutPanel6.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tableLayoutPanel6.Location = new System.Drawing.Point(3, 303);
+            this.tableLayoutPanel6.Location = new System.Drawing.Point(2, 246);
+            this.tableLayoutPanel6.Margin = new System.Windows.Forms.Padding(2);
             this.tableLayoutPanel6.Name = "tableLayoutPanel6";
             this.tableLayoutPanel6.RowCount = 2;
             this.tableLayoutPanel6.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
             this.tableLayoutPanel6.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel6.Size = new System.Drawing.Size(794, 144);
+            this.tableLayoutPanel6.Size = new System.Drawing.Size(596, 118);
             this.tableLayoutPanel6.TabIndex = 4;
             // 
             // btGuardar
@@ -337,9 +352,10 @@
             this.btGuardar.BackColor = System.Drawing.SystemColors.AppWorkspace;
             this.btGuardar.Dock = System.Windows.Forms.DockStyle.Fill;
             this.btGuardar.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.btGuardar.Location = new System.Drawing.Point(267, 3);
+            this.btGuardar.Location = new System.Drawing.Point(200, 2);
+            this.btGuardar.Margin = new System.Windows.Forms.Padding(2);
             this.btGuardar.Name = "btGuardar";
-            this.btGuardar.Size = new System.Drawing.Size(258, 66);
+            this.btGuardar.Size = new System.Drawing.Size(194, 55);
             this.btGuardar.TabIndex = 0;
             this.btGuardar.Text = "Guardar";
             this.btGuardar.UseVisualStyleBackColor = false;
@@ -350,9 +366,10 @@
             this.btCerrar.BackColor = System.Drawing.SystemColors.AppWorkspace;
             this.btCerrar.Dock = System.Windows.Forms.DockStyle.Fill;
             this.btCerrar.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.btCerrar.Location = new System.Drawing.Point(267, 75);
+            this.btCerrar.Location = new System.Drawing.Point(200, 61);
+            this.btCerrar.Margin = new System.Windows.Forms.Padding(2);
             this.btCerrar.Name = "btCerrar";
-            this.btCerrar.Size = new System.Drawing.Size(258, 66);
+            this.btCerrar.Size = new System.Drawing.Size(194, 55);
             this.btCerrar.TabIndex = 1;
             this.btCerrar.Text = "Cancelar";
             this.btCerrar.UseVisualStyleBackColor = false;
@@ -360,10 +377,12 @@
             // 
             // FormularioUsuario
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(600, 366);
             this.Controls.Add(this.tableLayoutPanel1);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "FormularioUsuario";
             this.Text = "Formulario Usuario";
             this.Load += new System.EventHandler(this.FormularioUsuario_Load);

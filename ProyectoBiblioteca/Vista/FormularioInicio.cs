@@ -1,6 +1,7 @@
-﻿using System;
+﻿using ProyectoBiblioteca.Controlador;
+using ProyectoBiblioteca.Vista;
+using System;
 using System.Windows.Forms;
-using ProyectoBiblioteca.Controlador;
 
 namespace ProyectoBiblioteca
 {
@@ -43,7 +44,9 @@ namespace ProyectoBiblioteca
               this.Show(); // se vuelve a mostrar el principal al cerrar el secundario */
 
             var form = new FormularioUsuario();
+            form.UsuarioU = this.controladorPricipal;
             InsertarFormulario(form);
+            
 
         }
 

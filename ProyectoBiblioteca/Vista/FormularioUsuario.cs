@@ -1,13 +1,14 @@
-﻿using System;
+﻿using ProyectoBiblioteca.Controlador;
+using ProyectoBiblioteca.Vista;
+using System;
 using System.Windows.Forms;
-using System.Data;
-using ProyectoBiblioteca.Controlador;
 
 namespace ProyectoBiblioteca
 {
     public partial class FormularioUsuario : Form
     {
         public controlador UsuarioU { get; set; }
+
 
         public FormularioUsuario()
         {
@@ -70,6 +71,17 @@ namespace ProyectoBiblioteca
         private void smiInsertar_Click(object sender, EventArgs e)
         {
             this.Close(); //Cerramos el formulario y al ser secundario se mostrara el principal ( formularioInicio)
+        }
+
+        private void btAgregar_Click(object sender, EventArgs e)
+        {
+            FormularioAgregarUsuario form = new FormularioAgregarUsuario();
+            form.formularioAgregarUsu = this.UsuarioU;
+            this.Hide();
+            form.ShowDialog();
+            this.Show();
+
+
         }
     }
 }

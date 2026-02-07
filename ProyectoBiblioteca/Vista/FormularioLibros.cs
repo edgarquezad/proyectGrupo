@@ -1,8 +1,8 @@
-﻿using System;
+﻿using ProyectoBiblioteca.Controlador;
+using ProyectoBiblioteca.Vista;
+using System;
 using System.Data;
 using System.Windows.Forms;
-using ProyectoBiblioteca.Controlador;
-using ProyectoBiblioteca.Vista;
 
 namespace ProyectoBiblioteca
 {
@@ -83,6 +83,11 @@ namespace ProyectoBiblioteca
         private void menUsuarios_Click(object sender, EventArgs e)
         {
             this.Close();
+        }
+
+        private void tableLayoutPanelLibros_Paint(object sender, PaintEventArgs e)
+        {
+
         }
     }
 }

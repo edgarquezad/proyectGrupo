@@ -54,11 +54,12 @@
             this.tlpPrincipal.Controls.Add(this.tableLayoutPanel1, 0, 1);
             this.tlpPrincipal.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tlpPrincipal.Location = new System.Drawing.Point(0, 0);
+            this.tlpPrincipal.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.tlpPrincipal.Name = "tlpPrincipal";
             this.tlpPrincipal.RowCount = 2;
             this.tlpPrincipal.RowStyles.Add(new System.Windows.Forms.RowStyle());
             this.tlpPrincipal.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tlpPrincipal.Size = new System.Drawing.Size(800, 450);
+            this.tlpPrincipal.Size = new System.Drawing.Size(600, 366);
             this.tlpPrincipal.TabIndex = 0;
             // 
             // tableLayoutPanel1
@@ -82,10 +83,10 @@
             this.tableLayoutPanel1.Controls.Add(this.btLimpiar, 2, 6);
             this.tableLayoutPanel1.Controls.Add(this.btCancelar, 0, 6);
             this.tableLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tableLayoutPanel1.Location = new System.Drawing.Point(18, 16);
-            this.tableLayoutPanel1.Margin = new System.Windows.Forms.Padding(18, 16, 18, 16);
+            this.tableLayoutPanel1.Location = new System.Drawing.Point(14, 13);
+            this.tableLayoutPanel1.Margin = new System.Windows.Forms.Padding(14, 13, 14, 13);
             this.tableLayoutPanel1.Name = "tableLayoutPanel1";
-            this.tableLayoutPanel1.Padding = new System.Windows.Forms.Padding(18, 16, 18, 16);
+            this.tableLayoutPanel1.Padding = new System.Windows.Forms.Padding(14, 13, 14, 13);
             this.tableLayoutPanel1.RowCount = 8;
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle());
@@ -93,9 +94,9 @@
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle());
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle());
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle());
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 40F));
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 32F));
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel1.Size = new System.Drawing.Size(764, 418);
+            this.tableLayoutPanel1.Size = new System.Drawing.Size(572, 340);
             this.tableLayoutPanel1.TabIndex = 4;
             this.tableLayoutPanel1.Paint += new System.Windows.Forms.PaintEventHandler(this.tableLayoutPanel1_Paint);
             // 
@@ -103,10 +104,10 @@
             // 
             this.tableLayoutPanel1.SetColumnSpan(this.tbEscritor, 2);
             this.tbEscritor.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tbEscritor.Location = new System.Drawing.Point(203, 151);
-            this.tbEscritor.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.tbEscritor.Location = new System.Drawing.Point(152, 120);
+            this.tbEscritor.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.tbEscritor.Name = "tbEscritor";
-            this.tbEscritor.Size = new System.Drawing.Size(540, 22);
+            this.tbEscritor.Size = new System.Drawing.Size(404, 20);
             this.tbEscritor.TabIndex = 9;
             // 
             // txtTitulo
@@ -115,9 +116,10 @@
             this.txtTitulo.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.txtTitulo.Dock = System.Windows.Forms.DockStyle.Fill;
             this.txtTitulo.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtTitulo.Location = new System.Drawing.Point(21, 123);
+            this.txtTitulo.Location = new System.Drawing.Point(16, 94);
+            this.txtTitulo.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.txtTitulo.Name = "txtTitulo";
-            this.txtTitulo.Size = new System.Drawing.Size(176, 26);
+            this.txtTitulo.Size = new System.Drawing.Size(132, 24);
             this.txtTitulo.TabIndex = 1;
             this.txtTitulo.Text = "Titulo";
             this.txtTitulo.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -128,9 +130,10 @@
             this.lEscritor.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.lEscritor.Dock = System.Windows.Forms.DockStyle.Fill;
             this.lEscritor.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lEscritor.Location = new System.Drawing.Point(21, 149);
+            this.lEscritor.Location = new System.Drawing.Point(16, 118);
+            this.lEscritor.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lEscritor.Name = "lEscritor";
-            this.lEscritor.Size = new System.Drawing.Size(176, 26);
+            this.lEscritor.Size = new System.Drawing.Size(132, 24);
             this.lEscritor.TabIndex = 2;
             this.lEscritor.Text = "Escritor";
             this.lEscritor.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -141,9 +144,10 @@
             this.lAno_edicion.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.lAno_edicion.Dock = System.Windows.Forms.DockStyle.Fill;
             this.lAno_edicion.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lAno_edicion.Location = new System.Drawing.Point(21, 175);
+            this.lAno_edicion.Location = new System.Drawing.Point(16, 142);
+            this.lAno_edicion.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lAno_edicion.Name = "lAno_edicion";
-            this.lAno_edicion.Size = new System.Drawing.Size(176, 26);
+            this.lAno_edicion.Size = new System.Drawing.Size(132, 24);
             this.lAno_edicion.TabIndex = 3;
             this.lAno_edicion.Text = "Año edicion";
             this.lAno_edicion.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -154,9 +158,10 @@
             this.tbSinopsis.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.tbSinopsis.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tbSinopsis.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tbSinopsis.Location = new System.Drawing.Point(21, 201);
+            this.tbSinopsis.Location = new System.Drawing.Point(16, 166);
+            this.tbSinopsis.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.tbSinopsis.Name = "tbSinopsis";
-            this.tbSinopsis.Size = new System.Drawing.Size(176, 26);
+            this.tbSinopsis.Size = new System.Drawing.Size(132, 24);
             this.tbSinopsis.TabIndex = 4;
             this.tbSinopsis.Text = "Sinopsis";
             this.tbSinopsis.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -165,30 +170,30 @@
             // 
             this.tableLayoutPanel1.SetColumnSpan(this.tbTitulo, 2);
             this.tbTitulo.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tbTitulo.Location = new System.Drawing.Point(203, 125);
-            this.tbTitulo.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.tbTitulo.Location = new System.Drawing.Point(152, 96);
+            this.tbTitulo.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.tbTitulo.Name = "tbTitulo";
-            this.tbTitulo.Size = new System.Drawing.Size(540, 22);
+            this.tbTitulo.Size = new System.Drawing.Size(404, 20);
             this.tbTitulo.TabIndex = 6;
             // 
             // tbAno_edicion
             // 
             this.tableLayoutPanel1.SetColumnSpan(this.tbAno_edicion, 2);
             this.tbAno_edicion.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tbAno_edicion.Location = new System.Drawing.Point(203, 177);
-            this.tbAno_edicion.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.tbAno_edicion.Location = new System.Drawing.Point(152, 144);
+            this.tbAno_edicion.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.tbAno_edicion.Name = "tbAno_edicion";
-            this.tbAno_edicion.Size = new System.Drawing.Size(540, 22);
+            this.tbAno_edicion.Size = new System.Drawing.Size(404, 20);
             this.tbAno_edicion.TabIndex = 7;
             // 
             // tbEmail
             // 
             this.tableLayoutPanel1.SetColumnSpan(this.tbEmail, 2);
             this.tbEmail.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tbEmail.Location = new System.Drawing.Point(203, 203);
-            this.tbEmail.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.tbEmail.Location = new System.Drawing.Point(152, 168);
+            this.tbEmail.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.tbEmail.Name = "tbEmail";
-            this.tbEmail.Size = new System.Drawing.Size(540, 22);
+            this.tbEmail.Size = new System.Drawing.Size(404, 20);
             this.tbEmail.TabIndex = 8;
             // 
             // btGuardar
@@ -197,10 +202,10 @@
             this.btGuardar.Dock = System.Windows.Forms.DockStyle.Fill;
             this.btGuardar.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btGuardar.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.btGuardar.Location = new System.Drawing.Point(203, 257);
-            this.btGuardar.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btGuardar.Location = new System.Drawing.Point(152, 216);
+            this.btGuardar.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btGuardar.Name = "btGuardar";
-            this.btGuardar.Size = new System.Drawing.Size(358, 36);
+            this.btGuardar.Size = new System.Drawing.Size(268, 28);
             this.btGuardar.TabIndex = 10;
             this.btGuardar.Text = "Guardar";
             this.btGuardar.UseVisualStyleBackColor = false;
@@ -210,9 +215,10 @@
             // 
             this.tableLayoutPanel1.SetColumnSpan(this.tbDisponible, 2);
             this.tbDisponible.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tbDisponible.Location = new System.Drawing.Point(203, 230);
+            this.tbDisponible.Location = new System.Drawing.Point(152, 192);
+            this.tbDisponible.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.tbDisponible.Name = "tbDisponible";
-            this.tbDisponible.Size = new System.Drawing.Size(540, 22);
+            this.tbDisponible.Size = new System.Drawing.Size(404, 20);
             this.tbDisponible.TabIndex = 11;
             // 
             // disponible
@@ -220,9 +226,10 @@
             this.disponible.AutoSize = true;
             this.disponible.Dock = System.Windows.Forms.DockStyle.Fill;
             this.disponible.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.disponible.Location = new System.Drawing.Point(21, 227);
+            this.disponible.Location = new System.Drawing.Point(16, 190);
+            this.disponible.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.disponible.Name = "disponible";
-            this.disponible.Size = new System.Drawing.Size(176, 28);
+            this.disponible.Size = new System.Drawing.Size(132, 24);
             this.disponible.TabIndex = 12;
             this.disponible.Text = "dispobible";
             // 
@@ -231,10 +238,10 @@
             this.btLimpiar.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.btLimpiar.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btLimpiar.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.btLimpiar.Location = new System.Drawing.Point(567, 257);
-            this.btLimpiar.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btLimpiar.Location = new System.Drawing.Point(424, 216);
+            this.btLimpiar.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btLimpiar.Name = "btLimpiar";
-            this.btLimpiar.Size = new System.Drawing.Size(176, 36);
+            this.btLimpiar.Size = new System.Drawing.Size(132, 28);
             this.btLimpiar.TabIndex = 13;
             this.btLimpiar.Text = "Limpiar";
             this.btLimpiar.UseVisualStyleBackColor = false;
@@ -245,10 +252,10 @@
             this.btCancelar.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.btCancelar.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btCancelar.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.btCancelar.Location = new System.Drawing.Point(21, 257);
-            this.btCancelar.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btCancelar.Location = new System.Drawing.Point(16, 216);
+            this.btCancelar.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btCancelar.Name = "btCancelar";
-            this.btCancelar.Size = new System.Drawing.Size(176, 36);
+            this.btCancelar.Size = new System.Drawing.Size(132, 28);
             this.btCancelar.TabIndex = 14;
             this.btCancelar.Text = "Cancelar";
             this.btCancelar.UseVisualStyleBackColor = false;
@@ -256,10 +263,12 @@
             // 
             // formularioAgregarLibro
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(600, 366);
             this.Controls.Add(this.tlpPrincipal);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "formularioAgregarLibro";
             this.Text = "formularioAgregarLibro";
             this.Load += new System.EventHandler(this.formularioAgregarLibro_Load);
